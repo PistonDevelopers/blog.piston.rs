@@ -1,14 +1,14 @@
 # Dependencies
 markdown:         redcarpet
-pygments:         true
+highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
+title:            Piston
+tagline:          A user friendly game engine written in Rust
+url:              http://piston.rs
 paginate:         1
 baseurl:          /
 author:
@@ -19,4 +19,4 @@ author:
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/PistonDevelopers/blog.piston.rs
