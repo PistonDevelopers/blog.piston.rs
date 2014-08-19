@@ -6,7 +6,7 @@ This is the repository for the official Piston blog.
 
 The Piston blog is collaboratively written, and changes and posts are drafted and published using GitHub pull requests.
 
-Posts and PRs should be written on an individual branch, and **all pull requests should be submitted against `master`.**
+Posts and PRs should be written on an individual branch, and **all pull requests should be submitted against `gh-pages`.**
 
 
 ## License
