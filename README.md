@@ -1,4 +1,4 @@
-# blog.piston.rs
+# blog.piston.rs [![Build Status](https://travis-ci.org/PistonDevelopers/blog.piston.rs.svg?branch=gh-pages)](https://travis-ci.org/PistonDevelopers/blog.piston.rs)
 
 This is the repository for the official Piston blog.
 
