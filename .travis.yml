@@ -6,3 +6,7 @@ script: ./script/cibuild
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # Speeds up installation of html-proofer
+
+branches:
+  only:
+    - gh-pages
