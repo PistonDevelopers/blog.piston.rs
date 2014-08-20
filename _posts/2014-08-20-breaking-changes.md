@@ -14,6 +14,6 @@ We will attempt to reexport gfx-rs as well. The motivation is to push Rust game 
 
 Libraries should not depend on Piston if they are intended to be reexported. Stuff will move out of the piston crate and into smaller libraries, so new libraries can depend directly on those.
 
-We are developing a common structure for input events to make widget and controller programming easier. The API in Piston will be unstable as we iterate on the design. For more information see [intput](https://github.com/pistondevelopers/input)
+We are developing a common structure for input events to make widget and controller programming easier. The API in Piston will be unstable as we iterate on the design. For more information see [input](https://github.com/pistondevelopers/input)
 
 If you find your code breaking and don't know how to fix it, ask in the [#rust-gamedev IRC channel](http://chat.mibbit.com/?server=irc.mozilla.org&channel=%23rust-gamedev) or take a look at [piston-examples](https://github.com/pistondevelopers/piston-examples).
