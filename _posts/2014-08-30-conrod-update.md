@@ -4,7 +4,7 @@ title: Conrod - A 100% Rust GUI Library
 author: mitchmindtree
 ---
 
-[Conrod](https://github.com/PistonDevelopers/conrod) is a super-young, "immediate-mode", graphical user interface library written entirely in Rust! Before I bore you with other stuff, here's a demonstration of it in action.
+[Conrod](https://github.com/PistonDevelopers/conrod) is a super-young, "immediate-mode", graphical user interface library written entirely in Rust! Before I bore you with the details, here's a demonstration of it in action.
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/n2UrjogA0j0" frameborder="0" allowfullscreen></iframe>
 
