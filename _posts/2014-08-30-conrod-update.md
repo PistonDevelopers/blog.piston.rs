@@ -30,8 +30,8 @@ and
 
 Only after I started to have a play with the idea did I realise how well the "immediate-mode" approach is suited to Rust's functional-esque style! The algebraic data types turned out to be perfect for both caching the necessary widget state and creating diverse yet concise `draw` signatures. Performance hasn't yet been an issue, and I no longer see any good reason why it should be!
 
-Button
-------
+API Code
+--------
 
 This is what drawing a Button looks like at the moment.
 
@@ -79,6 +79,9 @@ widget_matrix::draw(cols, // The number of columns.
 ```
 
 There's still [heaps of room for improvement and lots to be done](https://github.com/PistonDevelopers/conrod/issues) however it's definitely approaching a usable state.
+
+PistonWorks - Open Source Rust Libraries!
+-----------------------------------------
 
 It should be noted that there is no way Conrod would exist without the open source [PistonWorks](https://github.com/PistonDevelopers) collective! Conrod has several [Cargo](http://crates.io/) dependencies, and they are all Piston projects! Come and visit us / join in at [GitHub] (https://github.com/PistonDevelopers) or drop by on Mozilla's #rust-gamedev IRC channel where most of us are normally lurking.
 
