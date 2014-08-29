@@ -4,8 +4,6 @@ title: Inside the Game Loop
 author: bvssvni
 ---
 
-Today I am going to show you how I do analysis, using the Piston game loop as example.
-
 The current design of the Piston game loop:
 
 ```Rust
