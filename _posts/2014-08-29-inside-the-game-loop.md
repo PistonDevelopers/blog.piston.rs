@@ -75,7 +75,7 @@ fn next(&mut self) -> Option<GameEvent> {
 
 These 63 lines of code represents many hours of work from 3 people: bfops, gmorenz and bvssvni.
 
-* It is written as a state machine to be used as an `Iterator`. This makes it possible to use the game loop as an object in the code, that can be paused or continued at will, and be passed from one function to another.
+* It is written as a state machine to be used as an `Iterator`. This makes it possible to use the game loop as an object in the code, that can be paused or continued at will, and be passed from one function to another. For example, you can have one function for each scene and load the assets you need as local variables.
 * It uses a loop to avoid recursive calls.
 * Updates are deterministic. This means if you are not using random numbers, the application will produce the same results for the same user input.
 * Updates are always progressed by a fixed time step. If updates or rendering takes too much time, it will try to "catch up" without sleeping.
