@@ -4,6 +4,10 @@ title: Inside the Game Loop
 author: bvssvni
 ---
 
+Today I am going to show you how I do analysis, using the Piston game loop as example.
+
+The current design of the Piston game loop:
+
 ```Rust
 /// Returns the next game event.
 fn next(&mut self) -> Option<GameEvent> {
@@ -70,3 +74,11 @@ fn next(&mut self) -> Option<GameEvent> {
     }
 }
 ```
+
+These 63 lines of code represents many hours of work from 3 people: bfops, gmorenz and bvssvni.
+
+* It is written as a state machine to be used as an `Iterator`. This makes it possible to use the game loop as an object in the code, that can be paused or continued at will, and be passed from one function to another.
+* It uses a loop to avoid recursive calls.
+* Updates are deterministic. This means if you are not using random numbers, the application will produce the same results for the same user input.
+* Updates are always progressed by a fixed time step. If updates or rendering takes too much time, it will try to "catch up" without sleeping.
+* Rendering is slipping. The loop schedules the next frame from the last time it was rendered. If rendering gets too slow, then it leads to lower frame rate. This is because it makes no sense to render if the application state is not updated. For objects that move in a straight line, you can use the extrapolated time to generate smoother motion on rendering. This can also be used for non-linear motion if the frame rate is high enough.
