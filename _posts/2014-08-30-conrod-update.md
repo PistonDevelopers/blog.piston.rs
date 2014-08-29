@@ -8,6 +8,8 @@ author: mitchmindtree
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/n2UrjogA0j0" frameborder="0" allowfullscreen></iframe>
 
+*click click clickity click...*
+
 The Rust Story
 --------------
 
