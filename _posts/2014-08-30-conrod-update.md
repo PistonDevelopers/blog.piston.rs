@@ -40,8 +40,7 @@ This is what drawing a Button looks like at the moment.
 ```Rust
 // Inside our render loop...
 
-button::draw(&render_args, // Screen width and height.
-             &mut gl, // The OpenGL instance used to draw the GUI.
+button::draw(&mut gl, // The OpenGL instance used to draw the GUI.
              &mut ui_context, // A user interface context keeps track of state.
              unique_id, // Each widget needs it's own UI_ID.
              Point::new(x, y), // Screen location.
@@ -67,7 +66,7 @@ widget_matrix::draw(cols, // The number of columns.
                     |num, col, row, position, width, height| { // This is called once for each widget.
 
     // Now we draw the widgets with our callback params!
-    toggle::draw(&render_args, &mut gl, &mut ui_context, ui_id + num,
+    toggle::draw(&mut gl, &mut ui_context, ui_id + num,
                  position, width, height,
                  Frame(frame_width, frame_color), // Rectangle frame.
                  Color::new(r, g, b, a); // Rectangle color.
@@ -90,4 +89,6 @@ It should be noted that there is no way Conrod would exist without the open sour
 [https://github.com/PistonDevelopers](https://github.com/PistonDevelopers)
 
 [https://github.com/PistonDevelopers/conrod](https://github.com/PistonDevelopers/conrod)
+
+[mitchmindtree](https://github.com/mitchmindtree)
 
