@@ -29,7 +29,7 @@ I believe Rust will go mainstream in record time!
 
 ### Rust is easy to read
 
-I did an experiment, by showing Rust to somebody I knew with relatively little programming experience.
+I did an experiment, by showing Rust to somebody I knew, that had relatively little programming experience.
 It seems that things like types interference, traits and generics: People get it!
 
 While Rust is a hard language to learn because of its size and complexity, it is fairly easy to read.
@@ -59,7 +59,7 @@ Do you get this? It is *system* that is running you want to protect, not the sou
 ### Rust will make the future more secure
 
 Compiling to JavaScript will be OK in some cases, but not for scope where system programming lies in general.
-I don't think compiling the browser will solve the system security problem, because:
+I don't think compiling to the browser will solve the system security problem, because:
 
 * You can't verify that the source is actually doing as promised
 * It only emulates a sandboxed cross platform distribution
