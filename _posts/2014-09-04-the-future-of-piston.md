@@ -142,6 +142,6 @@ The adaption of Piston in the established industry would be just a bonus.
 
 In additon, several people in the community are pushing in other directions, so this is going to be exciting!
 
-Check out the [/r/rust_gamedev](http://www.reddit.com/r/rust_gamedev/):
+Check out the [/r/rust_gamedev](http://www.reddit.com/r/rust_gamedev/)
 
 Happy coding!
