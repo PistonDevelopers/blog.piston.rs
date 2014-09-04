@@ -89,13 +89,13 @@ use close source for platforms or ecosystems where you find it necessary.
 
 ### Will Piston be there in the future?
 
-I believe that people should not be forces to pick one solution that is a substandard of what they need.
+I believe that people should not be forced to pick one solution that is a substandard of what they need.
 Therefore, we are designing Piston to be modular in every possible way,
 such that you can take out the piece you want.
 
 For example, we are not building abstractions on top of dependencies.
 We are building the back-end on top of the abstractions,
-such that the software stack become a "root" instead of a "tree".
+such that the software stack becomes a "root" instead of a "tree".
 
 Most code depend on pure Rust abstractions, which you can plug in custom hardware and custom platforms.
 This means no vendor lock-in or paying for a developer license, ever.
@@ -117,11 +117,11 @@ I believe Piston will bring safer systems applications not just to programmers,
 but to all people, from those who want to tinker with computers up to professionals,
 without going through all the hazzards and fallpits of low level programming.
 
-We will push the direction toward general application programming.
+We will push the direction toward general application programming:
 
-* We are designing a cross platform API for user input [link](https://github.com/pistondevelopers/input)
+* We are designing a [cross platform API for user input](https://github.com/pistondevelopers/input)
 * We are collaborating closely with [Gfx](https://github.com/gfx-rs/gfx-rs), the safe low level graphics API
-* We are developing a cross platform, hardware accelerated user interface [link](https://github.com/pistondevelopers/conrod)
+* We are developing a [cross platform, hardware accelerated user interface](https://github.com/pistondevelopers/conrod)
 * We are doing research on the Window back-end side
 
 Some latest features include:
@@ -132,12 +132,9 @@ Some latest features include:
 
 ### Where are we going?
 
-In my career so far I have developed animation software that
-scales from beginners to professional to education.
-
 I dream of Piston changing how we write applications, in particular for new hardware.
-One thing I am not that worried about, is the adaption of either Rust or Piston in the established industry.
 There are plenty of people that have ideas and dreams of their own,
 which can become a reality through the tools we are developing.
+The adaption of Piston in the established industry would be just a bonus.
 
 Happy coding!
