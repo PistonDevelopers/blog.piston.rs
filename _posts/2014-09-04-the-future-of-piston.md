@@ -137,4 +137,11 @@ There are plenty of people that have ideas and dreams of their own,
 which can become a reality through the tools we are developing.
 The adaption of Piston in the established industry would be just a bonus.
 
+* We could develop libraries for payment solutions and content distribution
+* We could integrate with formats and content protocols used in the industry
+
+In additon, several people in the community are pushing in other directions, so this is going to be exciting!
+
+Check out the [/r/rust_gamedev](http://www.reddit.com/r/rust_gamedev/):
+
 Happy coding!
