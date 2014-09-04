@@ -82,7 +82,7 @@ because people will expect the source to be open.
 The way to make money on the distribution part is through services and downloadable content.
 
 Secondly, sharing libraries only mean less work for the developer and less maintenance cost.
-It also means better control over dependencies and you don't have to work in isolation.
+It also means better control over dependencies. There is also a psychological benefit of not working in isolation.
 
 The whole Piston project is developed with the MIT license, so you are in full right to
 use close source for platforms or ecosystems where you find it necessary.
