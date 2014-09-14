@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rust-Event: The new Piston library for event logic
+title: "Rust-Event: The new Piston library for event logic"
 author: bvssvni
 ---
 
