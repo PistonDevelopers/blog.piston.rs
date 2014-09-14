@@ -30,13 +30,13 @@ New Style with "Builder Pattern"
 --------------------------------
 
 ```Rust
-uic.button(0u64)
-    .dimensions(90.0, 60.0)
-    .position(50.0, 115.0)
-    .rgba(0.4, 0.75, 0.6, 1.0)
-    .frame(demo.frame_width, Color::black())
-    .label("PRESS", 24u32, Color::black())
-    .callback(|| demo.bg_color = Color::random())
+uic.button(unique_id)
+    .dimensions(width, height)
+    .position(x, y)
+    .rgba(r, g, b, a)
+    .frame(frame_width, frame_color)
+    .label("PRESS", font_size, font_color)
+    .callback(|| /* do stuff */)
     .draw(gl);
 ```
 
@@ -45,12 +45,14 @@ Benefits of the builder pattern include:
 - All methods are optional apart from `.draw(..)`. The old style was much more verbose due to the lack of default arguments.
 - All methods apart from `.draw(..)` can be called in any order which saves trying to remember arg ordering.
 - Once themes and positioning-helper-methods are implemented, you could do something like this `uic.set_theme("awesome_theme")` in your load/setup, and then widgets could look more like this:
+
 ```Rust
 uic.button(uiid)
     .down(padding)
-    .callback(|| do_stuff)
+    .callback(|| /* do_stuff */)
     .draw(gl);
 ```
+
 - Removes the need for the old enums that were necessary to handle defaults, etc.
 - the Callable trait (which offers the callback method) is generic. If my impression of associated types is correct, this means that handling different kinds of callbacks could be done statically rather than doing them dynamically with a Callback enum which we were previously considering.
 - this pattern is much more consistent with the rust-graphics api (on which Conrod depends), meaning that users hanging around the Piston ecosystem will move between APIs more easily.
@@ -62,7 +64,7 @@ Still to come
 - Positioning methods i.e. `.down(padding)`, `right_from(other_uiid, padding)`, etc.
 - More widgets.
 - Optimisation and faster performance.
-- [lots more](https://github.com/PistonDevelopers/conrod/issues)
+- [Lots more](https://github.com/PistonDevelopers/conrod/issues)
 
 We could use help on all of these things! Feel free to drop by the [github issues](https://github.com/PistonDevelopers/conrod/issues) and pitch in or add your own ideas :)
 
