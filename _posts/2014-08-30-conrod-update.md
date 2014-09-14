@@ -81,6 +81,8 @@ widget_matrix::draw(cols, // The number of columns.
 
 There's still [heaps of room for improvement and lots to be done](https://github.com/PistonDevelopers/conrod/issues) however it's definitely approaching a usable state.
 
+**EDIT**: *There have been so many awesome suggestions since this post that we had no choice but to do a total API overhaul. [Read the relevant update here!](http://blog.piston.rs/2014/09/14/conrod-api-overhaul/)*
+
 PistonWorks - Open Source Rust Libraries!
 -----------------------------------------
 
