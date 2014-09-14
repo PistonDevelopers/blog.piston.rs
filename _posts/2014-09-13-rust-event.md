@@ -51,23 +51,52 @@ for e in event_iter {
 
 Notice that event threading looks more low level, because it handles all the events through the same loop. This is how all low level window APIs deal with events.
 
-Event threading has the down side that all interaction between widgets, that are not window events, must be performed manually. You can not "connect" them with a signal/slot system, even though you might design a system for such a purpose. However, in an immediate mode GUI the widget exists as function calls, so you have to solve this problem anyway. By combining event threading and immediate mode you get a more specialized structure for events instead of a general pattern.
+Event threading has the down side that all interaction between widgets, that are not window events, must be performed manually.
+You can not "connect" them with a signal/slot system, even though you might design a system for such a purpose.
+However, in an immediate mode GUI the widget exists as function calls, so you have to solve this problem anyway.
+By combining event threading and immediate mode you get a more specialized structure for events instead of a general pattern.
 
-On the upside you don't loose the stack context at each event, which means you can shift from one stack environment to another without having to build a new application structure. For example, if you have two different scenes, you can write them as two functions, instead of writing an application structure that supports "scenes" in general. Experienced GUI programmers notice that event handlers are very buggy when you try to change the overall behavior of the application from one state to another. This is unfortunate because many applications require special modes, such as when connecting, rendering or loading in new data.
+On the upside you don't loose the stack context at each event, which means you can shift from one stack environment to another without having to build a new application structure.
+For example, if you have two different scenes, you can write them as two functions, instead of writing an application structure that supports "scenes" in general.
+Experienced GUI programmers notice that event handlers are very buggy when you try to change the overall behavior of the application from one state to another.
+This is unfortunate because many applications require special modes, such as when connecting, rendering or loading in new data.
 
-Another benefit with event threading is that you don't need to connect each signal to each slot. If there is a new type of event, for example multitouch, you only need to update the widget library. In Conrod, all the input received from the window is passed down to widgets which then decide what input they respond to. This means you write 1 or 2 lines of code to create a new widget and not hooking up 3-4 different event in a GUI editor. You can also write simple controllers with this technique, for example a [first person 3D camera](https://github.com/pistondevelopers/cam).
+Another benefit with event threading is that you don't need to connect each signal to each slot.
+If there is a new type of event, for example multitouch, you only need to update the widget library.
+In Conrod, all the input received from the window is passed down to widgets which then decide what input they respond to.
+This means you write 1 or 2 lines of code to create a new widget and not hooking up 3-4 different event in a GUI editor.
+You can also write simple controllers with this technique, for example a [first person 3D camera](https://github.com/pistondevelopers/cam).
 
 ### AI Behavior Trees
 
-While event threading is good enough for widgets and simple controllers, it is not good enough to express more complex behavior. For example, if you have an animated character, it needs to respond differently to events depending on the state of the character, such as jumping, sliding or fighting. What if you want do tune the behavior a little for particular scene? Then you need to go back and extend the character code to support the new behavior. It is even harder for game AI, where each character might do planning in parallel, with different sets of goals. Still, you are interacting with these objects in the same way as for widgets, through keyboard press, mouse button clicks etc.
+While event threading is good enough for widgets and simple controllers, it is not good enough to express more complex behavior.
+For example, if you have an animated character, it needs to respond differently to events depending on the state of the character, such as jumping, sliding or fighting.
+What if you want do tune the behavior a little for particular scene? Then you need to go back and extend the character code to support the new behavior.
+It is even harder for game AI, where each character might do planning in parallel, with different sets of goals.
+Still, you are interacting with these objects in the same way as for widgets, through keyboard press, mouse button clicks etc.
 
-In a component/entity system you create one system for each behavior and turn on/off the components of an entity when they want that specific behavior. One problem with this design is that you still have to express the logic of turning on/off components. The result is often not reusable across projects. While a component/entity system is very powerful to organize application data, it does not solve the problem of how to express behavior.
+In a component/entity system you create one system for each behavior and turn on/off the components of an entity when they want that specific behavior.
+One problem with this design is that you still have to express the logic of turning on/off components.
+The result is often not reusable across projects.
+While a component/entity system is very powerful to organize application data, it does not solve the problem of how to express behavior.
 
-An AI behavior tree is a data structure that describes a behavior, often through a high level language that makes it understandable, because it hides the details of how it is executed. For example, if you are programming a robot, then you could use the `Sequence` node to describe commands such as "move forward 3 m", "turn right", "wait 3 seconds" etc. You could use another `If` node to pick actions depending on some condition. Very soon you discover this looks like normal programming. So why not use a normal programming language? The problem is that a robot might run out of batteries, it might face an obstacle, or somebody wants to turn it off safely. All these actions are "behaviors" in the sense they describe something in isolation, but put together they influence each other. Therefore, all behaviors must deal with failure and delay as an integrated part of the logic.
+An AI behavior tree is a data structure that describes a behavior, often through a high level language that makes it understandable, because it hides the details of how it is executed.
+For example, if you are programming a robot, then you could use the `Sequence` node to describe commands such as "move forward 3 m", "turn right", "wait 3 seconds" etc.
+You could use another `If` node to pick actions depending on some condition.
+Very soon you discover this looks like normal programming.
+So why not use a normal programming language? The problem is that a robot might run out of batteries, it might face an obstacle, or somebody wants to turn it off safely.
+All these actions are "behaviors" in the sense they describe something in isolation, but put together they influence each other.
+Therefore, all behaviors must deal with failure and delay as an integrated part of the logic.
 
-A problem with behavior trees is that you can not describe parallel events with side effects perfectly, because when you look at two behaviors in isolation they might not behave exactly how you expected when putting them together. For example, if an event A fails after B fails in `WhenAll(A, B)`, the behavior fails at time A even if A logically happens after B, but because A was evaluated before B. This is because you don't know who succeeds first before they get evaluated, at which point it no longer matters because the side effects already happen! The way we solve this in Rust-Event is that behavior is expected to be correct down to the delta time update, but order of evaluation might determine behavior for shorter intervals. It is basically the same problem as for physics collision where character A gets to the door before B because A was evaluated first. For applications where you just want to describe the overall behavior and have a way to recover from failures, this is good enough.
+A problem with behavior trees is that you can not describe parallel events with side effects perfectly, because when you look at two behaviors in isolation they might not behave exactly how you expected when putting them together.
+For example, if an event A fails after B fails in `WhenAll(A, B)`, the behavior fails at time A even if A logically happens after B, but because A was evaluated before B.
+This is because you don't know who succeeds first before they get evaluated, at which point it no longer matters because the side effects already happen!
+The way we solve this in Rust-Event is that behavior is expected to be correct down to the delta time update, but order of evaluation might determine behavior for shorter intervals.
+It is basically the same problem as for physics collision where character A gets to the door before B because A was evaluated first.
+For applications where you just want to describe the overall behavior and have a way to recover from failures, this is good enough.
 
-Behavior trees are not only useful to describe AI logic, but also for simpler situations. For example, if you want a behavior that succeeds if the user is pressing A, holding for 1 second and then releasing A, it will look like this (a bit simplified for reading purposes):
+Behavior trees are not only useful to describe AI logic, but also for simpler situations.
+For example, if you want a behavior that succeeds if the user is pressing A, holding for 1 second and then releasing A, it will look like this (a bit simplified for reading purposes):
 
 `Sequence(Pressed(A), After(Wait(1.0), Released(A)))`
 
