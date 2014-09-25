@@ -8,9 +8,12 @@ Piston is a Rust game engine developed by the open source organization PistonDev
 
 http://www.piston.rs/
 
-At the core of Piston is the event loop, which polls events from the window back-end.
-The window back-end is represented as a trait `Window`, which means you can write your own back-end.
-PistonDevelopers maintains back-ends for SDL2 and GLFW.
+We are looking for contributors! [How to contribute to Piston](https://github.com/PistonDevelopers/piston/blob/master/CONTRIBUTING.md)
+
+At the core of Piston is the event loop, which polls events from the window.
+You can write your own back-end by implementing the `Window` trait.
+There exists back-ends for SDL2 and GLFW already.
+The library you need to write your own back-end is here:
 
 https://github.com/PistonDevelopers/event
 
@@ -142,4 +145,3 @@ Warning: *Remember to write unit tests!!!*
 * Discuss future directions for input model and integration with [glutin](https://github.com/tomaka/gl-init-rs)
 * Network events?
 
-Looking for contributors! [How to contribute to Piston](https://github.com/PistonDevelopers/piston/blob/master/CONTRIBUTING.md)
