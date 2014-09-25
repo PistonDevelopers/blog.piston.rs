@@ -104,8 +104,7 @@ fn foo<E: PressEvent + ReleaseEvent + UpdateEvent + ...>(e: &E) { ... }
 fn bar<E: PressEvent + ReleaseEvent + UpdateEvent + ...>(e: &E) { foo(e) }
 ```
 
-What if somebody wants a `HeadTrackerEvent`?
-All functions calling functions, that uses `.head_tracker(|head_data| { ... })`, need to be updated.
+With this approach, if you want to add a `HeadTrackerEvent`, then you need to update all functions that call functions that call `.head_tracker(|head_data| { ... })`.
 
 By using `GenericEvent`, we can do this:
 
