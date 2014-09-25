@@ -134,7 +134,7 @@ You probably need to wrap it in a struct tuple, since you need to own either the
 or the type to write an impl. For example `pub struct MyEvent(SDL2Event)`.
 Then write a window back-end as `impl Window<MyEvent> for MyWindow`.
 
-Warning: *Remember to write unit tests!!!*
+*Remember to inline the `GenericEvent` impl and write unit tests!!!*
 
 ### Further work
 
