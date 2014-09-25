@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            Piston
 tagline:          A user friendly game engine written in Rust
-url:              http://piston.rs
+url:              http://blog.piston.rs
 paginate:         3
 baseurl:          /
 author:
