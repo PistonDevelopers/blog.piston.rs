@@ -175,7 +175,7 @@ Since we are dividing one length of a vector with another,
 we can move the square root operation to after the division,
 while getting the same result.
 Typing out every operation explicitly makes such optimization easier.
-This why it is sometimes better to type out every operation.
+This is another reason it is sometimes better to type out every operation.
 
 Now to the second part:
 
