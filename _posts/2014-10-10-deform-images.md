@@ -10,7 +10,7 @@ Here is a demo of it in action:
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/qW4OlBWH5Gs" frameborder="0" allowfullscreen></iframe>
 
-Code is in the "deform" [example](https://github.com/pistondevelopers/piston-examples)
+Example code is in the "deform" app under [piston-examples](https://github.com/pistondevelopers/piston-examples).
 
 I have been using this algorithm for years in a 2D animation software.
 The algorithm is called "Rigid Moving Least Squares Deformation".
@@ -67,8 +67,8 @@ for m in range(0, nx) {
 When you work on a complicated math algorithm like this,
 the best thing is often to type out every addition and multiplication.
 This makes it far easier to translate to another programming language,
-because you don't have to depend on a math library (there are exceptions of course, like determinants),
-and it can be written in a way to make it readable.
+because you don't have to depend on a math library (there are exceptions of course, like determinants).
+There are some other reasons we will examine later in this post.
 
 The variable names are chosen to reflect [the original paper](https://github.com/PistonDevelopers/graphics/issues/625).
 One difference is that is uses a fixed "alpha" for performance reasons.
@@ -88,12 +88,13 @@ Perhaps you are familiar with matrix transformations?
 A matrix transformation is a general linear map,
 which means it can transform while keeping lines straight.
 The algebra on matrices is called linear algebra and is one of the central topics in mathematics.
-While it seems difficult on the surface, it all boils down to: `+ - * /`.
 
-This is just very simple operations, which are put together in patterns, and then comes out as a deformed image.
+While it seems difficult on the surface, it all boils down to: `+ - * / .sqrt()` and some loops.
+These are very simple operations, which are put together in patterns, and then comes out as a deformed image!
 
-Instead of transforming every pixel, we transform a grid, then do triangulation and render on the GPU.
-When the cells on the grid are small, this makes it almost indistinguishable from the perfect algorithm.
+Instead of transforming every pixel, we transform a grid and render the image on the GPU.
+
+### Algorithm walkthrough
 
 Let's look at the first part:
 
@@ -137,11 +138,10 @@ the more influenced you are by that point.
 
 "Weighted average" tells us how much a point is influenced by all control points.
 It gives an ideal position where the 1 / distance^2 weights are balanced.
-We need one for how much it is influenced in the original grid,
-and one for how much it should be influenced in the deformed grid.
+We need two weighted averages, one for the original and one for the deformed grid.
 
-To understand what the second part does,
-let's look at the last part.
+Since the second part is most complex, let's wait with it until the end.
+Here is the last part:
 
 ```Rust
 // Normalization trick to get length of vector.
@@ -154,15 +154,13 @@ fr[ip][1] = fr_y * vl + q_star_y;
 ```
 
 This gives us the final deformed point.
-So, the second step computes something to add to the weighted average!
 
-There is some piece of information that exists separately in the weighted average
-and the second part of the algorithm which makes the deformed coordinates together.
+Notice the second step computes something to add to the weighted average!
 How can this be?
 
 You can [override dependencies](https://github.com/PistonDevelopers/piston/issues/482)
 with Cargo to experiment by putting some `0.0` in front of `fr_x` and `fr_y`.
-If you run this, the image will be flattened be a shrinked shape with spikes to control points.
+If you run this, the image will become a shrinked shape with spikes attached to the control points.
 
 ![spiked image](http://i.imgur.com/JR1JAwl.png)
 
@@ -177,6 +175,7 @@ Since we are dividing one length of a vector with another,
 we can move the square root operation to after the division,
 while getting the same result.
 Typing out every operation explicitly makes such optimization easier.
+This why it is sometimes better to type out every operation.
 
 Now to the second part:
 
@@ -211,3 +210,5 @@ We could precompute the matrix, but that would require one matrix for every poin
 Storing that much memory might even be slower!
 The algorithm is `O(N * M * P)` where `N` is grid width, `M` is grid height and `P` is number of control points.
 This remains unchanged even if you precompute the matrices.
+
+Enjoy!
