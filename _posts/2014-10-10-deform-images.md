@@ -64,12 +64,6 @@ for m in range(0, nx) {
 }
 ```
 
-When you work on a complicated math algorithm like this,
-the best thing is often to type out every addition and multiplication.
-This makes it far easier to translate to another programming language,
-because you don't have to depend on a math library (there are exceptions of course, like determinants).
-There are some other reasons we will examine later in this post.
-
 The variable names are chosen to reflect [the original paper](https://github.com/PistonDevelopers/graphics/issues/625).
 One difference is that our algorithm uses a fixed "alpha" for performance reasons.
 
@@ -174,8 +168,6 @@ of the dot product with itself.
 Since we are dividing one length of a vector with another,
 we can move the square root operation to after the division,
 while getting the same result.
-Typing out every operation explicitly makes such optimization easier.
-This is another reason it is sometimes better to type out every operation.
 
 Now to the second part:
 
