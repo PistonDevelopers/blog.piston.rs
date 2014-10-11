@@ -71,7 +71,7 @@ because you don't have to depend on a math library (there are exceptions of cour
 There are some other reasons we will examine later in this post.
 
 The variable names are chosen to reflect [the original paper](https://github.com/PistonDevelopers/graphics/issues/625).
-One difference is that is uses a fixed "alpha" for performance reasons.
+One difference is that our algorithm uses a fixed "alpha" for performance reasons.
 
 I wish computer scientists provided such example code with research papers!
 
