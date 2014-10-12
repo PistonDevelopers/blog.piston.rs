@@ -59,7 +59,7 @@ so whenever you call `.draw(back_end)` it will render.
 This means you can render to multiple back-ends at the same time, if you need to.
 
 Writing your own back-end is easy, by implementing the `BackEnd` trait.
-piston-graphics is designed to be work with the simplest shaders possible,
+piston-graphics is designed to work with the simplest shaders possible,
 and performs triangulation on the CPU.
 Texture support is optional, so implementers can test it gradually.
 
