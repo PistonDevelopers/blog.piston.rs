@@ -83,9 +83,6 @@ and swap the back-end while running.
 The only benchmark available is a game called [Sea Snake Escape](https://github.com/bvssvni/rust-snake).
 It renders 65536 triangles on the sea snakes each frame, updated through a dynamic buffer.
 
-Remember that immediate mode 2D graphics is slower than 3D graphics in general,
-because 3D can store 
-
 On my computer, it runs at 60 fps with Gfx and 30 with OpenGL.
 The reason Gfx is faster is most likely because it uses state caching for alpha blending.
 For Gfx, this is 3932160 triangles per second.
