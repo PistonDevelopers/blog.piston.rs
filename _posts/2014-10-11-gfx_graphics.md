@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducing: gfx_graphics
+title: "Introducing: gfx_graphics"
 author: bvssvni
 ---
 
