@@ -11,7 +11,4 @@ Posts and PRs should be written on an individual branch, and **all pull requests
 
 ## License
 
-The Piston blog is based on the Poole Jekyll theme - designed, built, and published by [@mdo](https://twitter.com/mdo).
-All Poole-related content is copyright of Mark Otto ([@mdo](https://twitter.com/mdo)).
-
-All other content in this repository is the copyrighted work of the PistonDevelopers project, and is released under the [MIT license](LICENSE.md).
+All content in this repository is the copyrighted work of the PistonDevelopers project, and is released under the [MIT license](LICENSE.md).
