@@ -2,10 +2,31 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
+<div class="col-md-12 piston-posts">
+	<div class="piston-post">
+		<h1 class="post-title">
+		  {{ page.title }}
+		</h1>
+		
+		<h2 class="post-info">
+		  <span class="post-info-date">
+        <i class="fa fa-clock-o"></i>
+        {{ page.date | date: "%B %-d, %Y" }}
+      </span>
+      <span class="post-info-comments">
+        <i class="fa fa-comments"></i>
+        <a href="{{ post.url }}#disqus_thread">
+          0 comments
+        </a>
+      </span>
+		</h2>
+
+		<div class="post-content">
+		  {{ content }}
+		</div>
+	</div>
 </div>
 
-{% include disqus.html %}
+<div class="col-md-12">
+	{% include disqus.html %}
+</div>

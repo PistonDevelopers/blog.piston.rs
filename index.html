@@ -3,23 +3,35 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<div class="col-md-12 piston-posts">
   {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+    <div class="piston-post">
+      <h1 class="post-title">
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h1>
+      <h2 class="post-info">
+        <span class="post-info-date">
+          <i class="fa fa-clock-o"></i>
+          {{ post.date | date: "%B %-d, %Y" }}
+        </span>
+        <span class="post-info-comments">
+          <i class="fa fa-comments"></i>
+          <a href="{{ post.url }}#disqus_thread">
+            0 comments
+          </a>
+        </span>
+      </h2>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
+      <div class="post-content">
+        {{ post.content }}
+      </div>
+    </div>
   {% endfor %}
 </div>
 
-<div class="pagination">
+<div class="col-md-12 piston-pagination">
   {% if paginator.next_page %}
     <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
   {% else %}

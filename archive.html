@@ -1,0 +1,10 @@
+---
+layout: page
+title: Blog Posts
+---
+
+<ul class="piston-archive">
+	{% for post in site.posts %}
+	  <li>{{ post.date | date: "%B %-d, %Y" }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
