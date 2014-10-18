@@ -3,13 +3,13 @@ layout: default
 ---
 
 <div class="col-md-12 piston-posts">
-	<div class="piston-post">
-		<h1 class="post-title">
-		  {{ page.title }}
-		</h1>
-		
-		<h2 class="post-info">
-		  <span class="post-info-date">
+  <div class="piston-post">
+    <h1 class="post-title">
+      {{ page.title }}
+    </h1>
+    
+    <h2 class="post-info">
+      <span class="post-info-date">
         <i class="fa fa-clock-o"></i>
         {{ page.date | date: "%B %-d, %Y" }}
       </span>
@@ -19,14 +19,14 @@ layout: default
           0 comments
         </a>
       </span>
-		</h2>
+    </h2>
 
-		<div class="post-content">
-		  {{ content }}
-		</div>
-	</div>
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </div>
 </div>
 
 <div class="col-md-12">
-	{% include disqus.html %}
+  {% include disqus.html %}
 </div>
