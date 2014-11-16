@@ -185,6 +185,12 @@ a {
   }
 }
 
+@media all and (max-width: 465px) {
+  .piston-navbar .piston-navbar-brand small {
+    display: none;
+  }
+}
+
 /* === Posts === */
 .piston-posts {
   margin: 40px 0;
