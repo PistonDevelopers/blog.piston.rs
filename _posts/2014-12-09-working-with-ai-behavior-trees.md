@@ -200,7 +200,7 @@ let circle_until_player_within_distance =
     ]);
 ```
 
-The only difference betwee two loops is the condition.
+The only difference between two loops is the condition.
 Now, after the sea bird attempted an attack, it waits 5 seconds before it can attempt another one.
 
 Unlike a while-loop in "normal" programming, the body of the loop runs in parallel with the condition.
