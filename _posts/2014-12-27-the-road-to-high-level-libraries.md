@@ -205,11 +205,24 @@ so no information is required to glue one library to another.
 Generic libraries that uses `GetFrom`, `SetAt` and `ActOn` are not considered high level.
 *It is only high level if you don't have to keep track of any objects.*
 Piston-Current makes it easy to write high level interface on top of generic libraries,
-and nothing except using the traits is required to make it work.
+and the traits is the requirement.
+
+For example:
+
+```Rust
+/// Returns an event iterator for the event loop
+pub fn events() -> event::Events<Current<WindowBackEnd>> {
+    unsafe {
+        Events::new(current_window())
+    }
+}
+```
+
+The `Events` object can take `T`, `Current<T>` or `&RefCell<T>`.
 
 Using generic libraries on top of Piston-Current does not mean you have to use current objects.
-Current objects are usually used in application or a high level library,
-but only exposed in a high level library if there is a need to work around the limitations of the API.
+Current objects are usually used in application or a high level library.
+It can be exposed in a high level library if there is a need to work around the limitations of the API.
 
 For example, the `piston` library exposes the current window:
 
@@ -230,6 +243,9 @@ pub fn set_title(text: String) {
 
 Most functions in a high level library looks like the one above, with a few lines of code.
 The major part of the functionality can be built in safe generic code.
+
+A high level library author can choose to wrap the most frequent operations in a safe interface,
+and let users write their own functions.
 
 When a library has a high level dependency, it should import the function prefixed with `current_` instead of the type.
 This is because the dependency then can be recompiled and change the type without breaking code.
