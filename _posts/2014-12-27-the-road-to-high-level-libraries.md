@@ -14,7 +14,7 @@ that makes them very easy to use and can be composed together without adding com
 I think the expression "high level" is awfully inaccurate, but I have not yet come up with a better word for it.
 Unfortunately I don't have the libraries yet to show what I mean, but I hope to explain something about it in this post.
 
-Piston-Current is design with the intention that code based on it
+Piston-Current is designed with the intention that code based on it
 is easy to translate from back-end specific to generic,
 or building a high level library on top of it.
 Therefore, Piston-Current is considered one of the "core" libraries of Piston.
