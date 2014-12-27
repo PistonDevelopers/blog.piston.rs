@@ -281,33 +281,8 @@ A library can start out as high level and be redesigned as a normal library,
 change the back-end specific code,
 or be rewritten to use a back-end agnostic abstraction, often without breaking code.
 
-High level libraries are in general much easier and faster to develop,
-and does not require as much knowledge about library design,
-because the typical interface usually consists of global functions.
-
-This makes it easier to test the real world usage of the library at early stage of development,
-so library authors might start out with a high level library for a specific use case,
-then write a better abstraction with multiple high level libraries on top of it.
-
 Many people can work in parallel on different libraries without having to know about each other,
 which is very important in a larger community.
-
-A high level library does not need to use Piston-Current,
-so if somebody writes a high level library on top of a generic library,
-and need it to work in an environment with specific platform constraints,
-they can change the implementation entirely without breaking application code.
-
-A typical high level library consists mostly of global functions,
-which means it could be written in C or a scripting language.
-The concept does not apply only to Piston, but Piston-Current makes it such that
-any generic library using Piston-Current is easy to turn into a high level one.
-For example, if the Piston project develops a new library and you want a more convenient
-one for your games, you can write a high level library on top of it.
-Later, if you want to reimplement it in Lua, that is your choice.
-
-Because games tend to be very implementation specific and hard to combine,
-the prospect of high level libraries might make it easier to reuse bigger parts of one project in another.
-This is done without depending on a common Entity/Component system.
 
 ### Safety vs convenience
 
@@ -316,11 +291,9 @@ which makes them a bit hard to accept for people who only want to write in safe 
 It is easy to avoid the pitfalls, but since the compiler can not enforce these rules,
 there is room for human error.
 
-It is possible to use scoped thread local variable and `&RefCell<T>` to achieve a similar functionality safely,
-but it is not as convenient to use.
-Generic libraries based on Piston-Current can be also used this way, without current objects.
-The major advantage of current object over scoped thread local variables
-is that switching from current objects to normal references is easier.
+Scoped thread local variable and `&RefCell<T>` can achieve a similar functionality safely,
+but can only be used with closure callbacks.
+Therefore, Piston-Current supports this as a safer alternative.
 
 When calling a function that gives you a mutable reference to a current object in a closure,
 it is possible to create two mutable references in scope by calling the same function inside the closure:
@@ -342,13 +315,10 @@ render(unsafe { current::DANGER::new() }, Some(white), |c, g| {
 }
 ```
 
-In all such cases, the documentation of the function must include a notice about what the unsafety is about.
+When you see `DANGER`, the documentation of the function must include a notice about what the unsafety is about.
 This way, if there is no unsafe block in the closure, the code is guaranteed to be safe.
-
-The scoped thread local solution could avoid this, but will cause task panic in the same situation.
-It is harder to reason about task panic with `&RefCell<T>` and scoped thread locals,
-which might be critical for some types of applications.
-Piston-Current lets you choose what is right for your case.
+Scoped thread locals can avoid this, but will cause task panic in the same situation.
+Piston-Current lets you choose either one.
 
 Using current objects in library design requires some knowledge about the danger of mutable aliased pointers.
 Dereferencing, borrowing and then assigning with `Current` multiple times in same scope is considered unsafe.
@@ -362,9 +332,7 @@ let Title(text) = foo.get();
 println!("{}", text);
 ```
 
-The unsafety aspect of current objects is only when they are brough into scope as reference.
-Calling a method on a current object is not unsafe, but still, an unsafe block is required,
-because it is possible to reach unsafe cases in safe Rust code.
+Calling a method on a current object is not unsafe, only if two objects of same type are brought into scope.
 In order to meet the standard of safety, `Current::<T>` can not be constructed safely.
 
 For example:
@@ -386,12 +354,12 @@ use those functions in an unsafe way, the convention is to mark such functions w
 unsafe fn current_window() -> Current<Window> { Current::new() }
 ```
 
-When working on your own game project, it is up to you wether you want unsafe functions or not.
+When working on your own game project, it is up to you whether you want unsafe functions or not.
 This is easy to add or remove.
 
-In generic code, unsafe blocks are not required and is safe without unsafe blocks.
+In generic code, unsafe blocks are not required.
 
-Current objects should usually not be used within `impls`, but only within global functions.
+Current objects should usually be used within global functions.
 For `impls`, use generics instead.
 
 ### Conclusion
@@ -415,7 +383,7 @@ Scoped thread locals combined with `&RefCell<T>` is harder to refactor to safer 
 Because of the convenience of changing back and forth, I am in favor of the current design.
 
 Besides, since `&RefCell<T>` is supported by Piston-Current,
-it can be combined with scoped thread locals in generic code.
+it can be combined with scoped thread locals to get same functionality.
 This is great for people that want better safety guarantees and choose to not use current objects.
 The scoped thread local version does not add new features or makes it safer to use.
 However, just in case, the "scoped" branch will be kept until Rust 1.0 is released.
