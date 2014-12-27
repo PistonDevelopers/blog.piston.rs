@@ -198,10 +198,9 @@ Currently the `piston` repo is the only high level library,
 but the plan is to extend the Piston ecosystem with new high libraries over time.
 
 A high level library can be used with another library if they share a high level dependency,
-even those libraries was not designed intentionally to work together.
+even those libraries were not designed intentionally to work together.
 This is because current objects are unique per type,
-so no information is required to pass from one library to another,
-since that information is known at compile time.
+so no information is required to glue one library to another.
 
 Generic libraries that uses `GetFrom`, `SetAt` and `ActOn` are not considered high level.
 *It is only high level if you don't have to keep track of any objects.*
