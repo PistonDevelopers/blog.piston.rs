@@ -17,6 +17,7 @@ the safety issues with higher level APIs are solved, and [Best coding practices 
 - [Glium graphics back-end for Piston](https://github.com/pistondevelopers/glium_graphics)
 - [Image got animated GIF encoder](https://github.com/PistonDevelopers/image/pull/286)
 - [Hematite got new life, planning Minecraft client and server](https://github.com/pistondevelopers/hematite)
+- [Conrod is now back-end agnostic](https://github.com/PistonDevelopers/conrod/pull/297)
 
 Also, notice audio libraries are moved to a new organization: [RustAudio](https://github.com/rustaudio/).
 mindtree is working on these libraries frequently and probably would love some contributions!
