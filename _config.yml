@@ -13,7 +13,7 @@ paginate:         3
 baseurl:          /
 author:
     name:         PistonDevelopers
-    url:          http://piston.rs
+    url:          https://github.com/PistonDevelopers
     email:        contact@piston.rs
 
 # Custom vars

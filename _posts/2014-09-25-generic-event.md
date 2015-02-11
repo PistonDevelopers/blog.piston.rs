@@ -139,6 +139,6 @@ Then write a window back-end as `impl Window<MyEvent> for MyWindow`.
 * Update [cam](https://github.com/PistonDevelopers/cam)
 * Update [Conrod](https://github.com/pistondevelopers/conrod)
 * Investigate event transformations
-* Discuss future directions for input model and integration with [glutin](https://github.com/tomaka/gl-init-rs)
+* Discuss future directions for input model and integration with [glutin](https://github.com/tomaka/glutin)
 * Network events?
 
