@@ -13,13 +13,13 @@ Some profiled projects are:
 * [conrod](https://github.com/pistondevelopers/conrod) - an immediate mode GUI
 * [hematite](https://github.com/pistondevelopers/hematite) - a simple Minecraft clone written in Rust
 * [piston](https://github.com/pistondevelopers/piston) - Piston, the game engine
-* [rust-graphics](https://github.com/pistondevelopers/rust-graphics) - a 2D graphics library
-* [rust-image](https://github.com/pistondevelopers/rust-image) - a pure Rust image library
+* [rust-graphics](https://github.com/pistondevelopers/graphics) - a 2D graphics library
+* [rust-image](https://github.com/pistondevelopers/image) - a pure Rust image library
 * [VisualRust](https://github.com/pistondevelopers/visualrust) - Visual Studio extension for Rust
 
 We are now working on another project that we call "Rust-Event".
 
-[https://github.com/PistonDevelopers/rust-event](https://github.com/PistonDevelopers/rust-event)
+[https://github.com/PistonDevelopers/rust-event](https://github.com/PistonDevelopers/event)
 
 Rust-Event has been in experimental phase for several months, now it is time to test out the ideas for real.
 It is still early to say if this is the right direction, so you should consider it very unstable.

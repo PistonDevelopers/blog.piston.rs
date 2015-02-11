@@ -6,7 +6,9 @@ task :test do
             '#',
             /mibbit/
         ],
-        :ssl_verifypeer => false,
+        :typhoeus => {
+            headers: { Accept: "html, */*" }
+        },
         :verbose => true
     }).run
 end
