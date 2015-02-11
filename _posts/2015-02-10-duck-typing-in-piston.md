@@ -25,7 +25,7 @@ mindtree is working on these libraries frequently and probably would love some c
 ### Experimenting with abstractions for game development in Rust
 
 Disclaimer: *The opinions in this article are not meant to be taken seriously,
-this is to just to make is sound less boring!
+this is to just to make it sound less boring!
 Neither does it represent the official view of the 90 other Piston developers...*
 
 [The Piston project](http://www.piston.rs/) is an active open source organization that started out
