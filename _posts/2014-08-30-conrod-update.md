@@ -86,7 +86,7 @@ There's still [heaps of room for improvement and lots to be done](https://github
 PistonWorks - Open Source Rust Libraries!
 -----------------------------------------
 
-It should be noted that there is no way Conrod would exist without the open source [PistonWorks](https://github.com/PistonDevelopers) collective! Conrod has several [Cargo](https://crates.io/) dependencies, and they are all Piston projects! Come and visit us / join in at [GitHub] (https://github.com/PistonDevelopers) or drop by on Mozilla's #rust-gamedev IRC channel where most of us are normally lurking.
+It should be noted that there is no way Conrod would exist without the open source [PistonWorks](https://github.com/PistonDevelopers) collective! Conrod has several [Cargo](https://crates.io) dependencies, and they are all Piston projects! Come and visit us / join in at [GitHub] (https://github.com/PistonDevelopers) or drop by on Mozilla's #rust-gamedev IRC channel where most of us are normally lurking.
 
 [https://github.com/PistonDevelopers](https://github.com/PistonDevelopers)
 
