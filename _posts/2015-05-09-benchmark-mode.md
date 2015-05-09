@@ -11,13 +11,8 @@ In benchmark mode, the game loop runs as fast as it can without sleeping.
 
 To enable benchmark mode, add `.bench_mode(true)` to the event iterator.
 User input events and idle events are ignored, in case the cat walks across the keyboard,
-but you can still quit any time,
-either by closing the window (not the window the cat came from, but the one on your screen)
+but you can still quit any time
 of hitting Esc if you have `WindowSettings.exit_on_esc(true)`.
-Where did that cat go? (searching under the sofa, lifting carpets, looking behind the door,
-checking the mailbox, finally found it in under the kitchen sink ... and THERE YOU ARE).
-
-I mean, here we are, because this blog post is about benchmarking.
 
 ### Preparing your game for benchmarking
 
