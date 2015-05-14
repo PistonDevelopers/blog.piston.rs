@@ -6,7 +6,7 @@ author: vosen
 
 The Piston team would like to announce release of Visual Rust 0.1
 
-![Visual Rust](http://i.imgur.com/63IYU6b.png)
+[![Visual Rust](http://i.imgur.com/63IYU6b.png)](http://i.imgur.com/63IYU6b.png)
 
 Visual Rust is Visual Studio extension for Rust language.
 This release adds Rust editor and support for creating, building and
