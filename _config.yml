@@ -10,7 +10,6 @@ title:            Piston
 tagline:          A user friendly game engine written in Rust
 url:              http://blog.piston.rs
 paginate:         3
-baseurl:          /
 author:
     name:         PistonDevelopers
     url:          https://github.com/PistonDevelopers
