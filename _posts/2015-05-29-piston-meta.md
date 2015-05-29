@@ -14,7 +14,7 @@ Meta parsing is a technique where you use a rules to describe how to transform a
 in a similar way that a parser generator can generate code for reading a text by a grammar,
 except that the rules in meta parsing can be changed at run time,
 or even read from a text described by the same rules.
-Piston-Meta is inspired by OMeta (https://en.wikipedia.org/wiki/OMeta) developed at
+Piston-Meta is inspired by [OMeta](https://en.wikipedia.org/wiki/OMeta) developed at
 Viewpoints Research Institute in 2007.
 
 ### Why Piston-Meta?
