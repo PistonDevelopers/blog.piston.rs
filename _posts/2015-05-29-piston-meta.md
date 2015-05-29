@@ -122,7 +122,7 @@ array: ["weapons:", w!, sep(until(",") -> item, [",", w?])]
 1. We need a rule for reading stuff like "array:".
 2. We need a rule for reading a text string "weapons:" and ",".
 3. We need a rule for reading "w!" and "w?".
-4. We need a rule for reading "until(<any_characters>)".
+4. We need a rule for reading 'until(",")'.
 5. We need a rule for reading stuff like "[...]" that can contain 2, 3, 4 and itself 5.
 6. We need a rule for the whole document that repeats 1 followed by 5, separated by new lines
 
