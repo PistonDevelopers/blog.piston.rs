@@ -32,7 +32,7 @@ This has drawbacks for several reasons:
 [Piston-Meta](https://github.com/PistonDevelopers/meta) solves these problems by using meta rules
 that fits for working with data, where good error messages are important,
 and where the abstraction level is the same as JSON building blocks.
-For more information see https://github.com/PistonDevelopers/meta/issues/1.
+For more information see [https://github.com/PistonDevelopers/meta/issues/1](https://github.com/PistonDevelopers/meta/issues/1).
 
 ### "Hello world" in Piston-Meta
 
