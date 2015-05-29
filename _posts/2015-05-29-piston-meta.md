@@ -9,7 +9,7 @@ Piston is an open source game engine written in Rust ([http://www.piston.rs](htt
 [Piston-Meta](https://github.com/PistonDevelopers/meta) is 0.1!
 
 Piston-Meta is a research project under the Piston project to explore the use of meta parsing
-and composing for data oriented design.
+and composing for data.
 Meta parsing is a technique where you use a rules to describe how to transform a text into a tree structure,
 in a similar way that a parser generator can generate code for reading a text by a grammar,
 except that the rules in meta parsing can be changed at run time,
