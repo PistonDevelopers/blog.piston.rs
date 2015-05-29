@@ -4,7 +4,7 @@ title: "Piston-Meta 0.1"
 author: bvssvni
 ---
 
-Piston is an open source game engine written in Rust (http://www.piston.rs/).
+Piston is an open source game engine written in Rust ([http://www.piston.rs](http://www.piston.rs)).
 
 [Piston-Meta](https://github.com/PistonDevelopers/meta) is 0.1!
 
