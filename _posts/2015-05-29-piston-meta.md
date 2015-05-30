@@ -102,7 +102,7 @@ Assume we wanted to read this into an array of weapons, we could make up a simpl
 array: ["weapons:", w!, sep(until(",") -> item, [",", w?])]
 ```
 
-`w!` means required `Whitespace` and `w?` means optional `Whitespace`. The allow `->` tells what field to store that data, which is the `property` of that rule. "sep" is an abbreviation for `SeparatedBy`, "until" is for `UntilWhitespaceOrAny`. The stuff in quotes are `Token`.
+`w!` means required `Whitespace` and `w?` means optional `Whitespace`. The arrow `->` tells what field to store that data, which is the `property` of that rule. "sep" is an abbreviation for `SeparatedBy`, "until" is for `UntilWhitespaceOrAny`. The stuff in quotes are `Token`.
 
 Now you have 2 options:
 
