@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Piston-Window 0.2 Released"
+title: "Piston-Window 0.2"
 author: bvssvni
 ---
 
