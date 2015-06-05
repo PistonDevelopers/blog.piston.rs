@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Piston-Window 0.2.0 Release"
+title: "Piston-Window 0.2 Released"
 author: bvssvni
 ---
 
@@ -50,9 +50,9 @@ Instead, you could pass around one `PistonWindow` to different functions that re
 This way you do not have to resolve the state, because it is part of the context.
 
 `PistonWindow` implements `AdvancedWindow`, `Iterator`, `Window` and `GenericEvent`.
-The iterator emits new `PistonWindow` objects, that contain the event from the game loop.
+The iterator emits new objects of same type that wraps the event from the game loop.
 You can swap the application state with `.app` method.
-`PistonWindow` also supports nested game loops, so you can have one inside another.
+Nested game loops are supported, so you can have one inside another.
 
 ```Rust
 for e in window {
