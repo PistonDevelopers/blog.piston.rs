@@ -269,7 +269,7 @@ seps: "[]{}():.!?\""
 
 This is how you check rules when by bootstrapping them twice and compare them:
 
-```
+```Rust
 extern crate piston_meta;
 
 use piston_meta::parse;
