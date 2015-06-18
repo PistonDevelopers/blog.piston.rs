@@ -149,7 +149,7 @@ hi
 ha
 ```
 
-`1 "farm animals separated by commas" s?(["," w?]){{"cow" "pig" "hen" "sheep"}}`:
+```1 "farm animals separated by commas" s?(["," w?]){{"cow" "pig" "hen" "sheep"}}```:
 
 ```
 sheep, cow, pig, hen,hen,hen, cow, cow, pig
