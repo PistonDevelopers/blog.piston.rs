@@ -43,7 +43,7 @@ These are the main abstractions for window/events/graphics:
 - [gfx](https://github.com/gfx-rs/gfx) (3D graphics, developed under gfx-rs organization)
 
 The Piston project has many small libraries and projects running in parallel.
-For a full list, see https://github.com/pistondevelopers/.
+For a full list, see [https://github.com/pistondevelopers/](https://github.com/pistondevelopers/).
 
 ### Window
 
