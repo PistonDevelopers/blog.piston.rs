@@ -220,7 +220,6 @@ Alternative designs are being considered, for example performing triangulation i
 The event loop in Piston supports bench mark mode out of the box,
 which is one of the few reliable ways to test the overall performance of a game engine.
 
-This is activated by calling `.bench_mode(true)` on the event iterator.
 When enabled, it will render and update without sleep and ignore input.
 
 ```Rust
