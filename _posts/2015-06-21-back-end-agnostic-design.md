@@ -14,7 +14,7 @@ There is a subreddit for Rust gamedev [here](http://www.reddit.com/r/rust_gamede
 ### Naming
 
 Piston uses back-end agnostic design.
-Back-ends for "graphics" ends with "_graphics" and back-ends for "window" ends with "_window".
+Back-ends for "graphics" ends with `_graphics` and back-ends for "window" ends with `_window`.
 For example:
 
 - [opengl_graphics](https://github.com/pistondevelopers/opengl_graphics) => [graphics](https://github.com/pistondevelopers/graphics)
