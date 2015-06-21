@@ -170,7 +170,7 @@ pub trait Graphics {
 }
 ```
 
-The `DrawState` is the that Gfx uses, such that there is no overhead and exposes fixed hardware pipelines features are available to higher level APIs.
+The `DrawState` is the same one that Gfx uses, such that there is no overhead and exposes fixed hardware pipelines features are available to higher level APIs.
 This means that Piston can use the stencil buffer directly for things like clipping or simple blending effects.
 
 The closure takes a closure, so the same state can be reused by the back-end between each call.
