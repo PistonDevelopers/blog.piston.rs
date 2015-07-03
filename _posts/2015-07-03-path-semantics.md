@@ -180,4 +180,4 @@ It would be interesting if some of the patterns used in AtomSpace could be encod
 One project currently going on in OpenCog is to make game characters smarter, which is very interesting.
 This project has done a lot of testing in this area, and perhaps the Piston project will explore some things in this direction.
 
-This project has also been important for Piston-Meta, which might turn out to be very useful for other projects.
+This project has also been important for testing [Piston-Meta](https://github.com/pistondevelopers/meta), which might turn out to be very useful for other projects.
