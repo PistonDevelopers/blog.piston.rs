@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conrod Update
+title: Another Year With Conrod
 author: mitchmindtree
 ---
 
@@ -128,5 +128,5 @@ Some things that come to mind are:
 
 We also have a milestone for [what we'd like to see in a 1.0 conrod release](https://github.com/PistonDevelopers/conrod/milestones/1.0.0). If you're interested in contributing please drop by - any help is more than welcome!
 
-Visit conrod [here](https://github.com/PistonDevelopers/conrod).
+Come and visit [conrod](https://github.com/PistonDevelopers/conrod).
 
