@@ -6,6 +6,11 @@ author: mitchmindtree
 
 [Conrod](https://github.com/PistonDevelopers/conrod) has been getting some painstaking love and attention over the past few months, and considering it has been about a year since [the last post](http://blog.piston.rs/2014/09/14/conrod-api-overhaul/) I thought it was about time for a quick update!
 
+
+[![Imgur](http://i.imgur.com/LZKXdgP.png)](http://i.imgur.com/LZKXdgP.png)
+*a pic of the classic, useless all_widgets.rs example*
+
+
 In summary, the main changes are:
 
 - Working with stable rust and on crates.io
@@ -84,6 +89,8 @@ Widgets also offer a `floating` method for becoming "detached" from the gui grap
 
 Demonstrations of all of these can be found within the [`canvas.rs` example](https://github.com/PistonDevelopers/conrod/blob/master/examples/canvas.rs).
 
+[![canvas.rs](http://i.imgur.com/A3P4eQY.png)](http://i.imgur.com/A3P4eQY.png)
+
 
 Themes
 ------
@@ -125,6 +132,17 @@ Some things that come to mind are:
 - Support for images in general (on buttons, toggles, viewers, etc). The main problem is that I am currently unsure the best way to generically support this.
 - [Lots more stuff](https://github.com/PistonDevelopers/conrod/issues).
 
+
+Demo
+----
+
+Here's a little Synth Editor I made using Conrod and some of the [RustAudio](https://github.com/RustAudio) crates. Keep in mind it's a little old, and was around before tabs and generalised scrolling (both of which I would have used had I done it today).
+
+<iframe width="600" height="450" src="https://www.youtube.com/embed/_ZXLCVibI8c" frameborder="0" allowfullscreen></iframe>
+
+
+Contribute
+----------
 
 We also have a milestone for [what we'd like to see in a 1.0 conrod release](https://github.com/PistonDevelopers/conrod/milestones/1.0.0). If you're interested in contributing please drop by - any help is more than welcome!
 
