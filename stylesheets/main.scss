@@ -221,17 +221,30 @@ a {
       padding-right: 2px;
     }
 
-    .post-info-date {
-      color: hsl(0, 0%, 60%);
-      margin-right: 15px;
+    .post-info-date,
+    .post-info-comments,
+    .post-info-author {
       font-weight: 600;
       text-transform: uppercase;
     }
 
-    .post-info-comments, .post-info-comments a {
+    .post-info-date,
+    .post-info-comments {
+      margin-right: 15px;
+    }
+
+    .post-info-date {
+      color: hsl(0, 0%, 60%);
+    }
+
+    .post-info-comments,
+    .post-info-comments a {
       color: hsl(101, 60%, 38%);
-      font-weight: 600;
-      text-transform: uppercase;
+    }
+
+    .post-info-author,
+    .post-info-author a {
+      color: hsl(196, 62%, 45%);
     }
   }
 
