@@ -112,7 +112,7 @@ Meta data can be converted into rules of the same kind of AST that is used for p
 Therefore, it can replace its own rules with new ones,
 allowing custom formats to be described in a slightly different meta language.
 
-### Meta math & mental acrobatic
+### Meta math & mental acrobatics
 
 When you have a document X the meta syntax Y of X is X's meta language.
 When Y has the meta syntax Z, then X's meta meta language is Z.
