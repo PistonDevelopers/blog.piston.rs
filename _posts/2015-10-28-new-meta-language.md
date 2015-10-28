@@ -75,7 +75,7 @@ Extra zeros are caused by numbers that do not have an accurate floating number r
 
 ### Why Piston-Meta?
 
-I game development, there are often many different text formats.
+In game development, there are often many different text formats.
 Normally this requires a dependency on a library per format.
 With meta parsing, one can use a single library and change the syntax without recompiling the program.
 
