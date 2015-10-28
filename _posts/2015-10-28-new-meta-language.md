@@ -45,7 +45,7 @@ Syntax:
 0 , = [.w? "," .w?]
 1 pos = [.w? .$:"x" , .$:"y" , .$:"z" .w?]
 // The last rule is used for the entire document.
-1 document = .l(pos:"pos")
+2 document = .l(pos:"pos")
 ```
 
 `.$` is used to parse numbers as `f64`.
