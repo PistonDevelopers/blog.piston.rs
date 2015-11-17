@@ -128,7 +128,7 @@ pub fn swap_physics(&mut self) {
 }
 ```
 
-Johnathan Blow wrote an article about [concurrent world editing](http://the-witness.net/news/2011/12/engine-tech-concurrent-world-editing/).
+Johnathan Blow wrote an article about [concurrent world editing](http://the-witness.net/news/2011/12/engine-tech-concurrent-world-editing/) which we intend to test in Turbine.
 Each entity has its own text file, which allows multiple people to work on various parts of the world at the same time.
 When synchronizing the changes, a normal version control system can be used.
 Piston-Meta is really great for this, because we can design a text format that works exactly the way we want.
