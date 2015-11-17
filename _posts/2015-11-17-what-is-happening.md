@@ -196,7 +196,7 @@ We are looking forward to DirectX 12 and Vulkan support.
 Piston-Graphics uses the same draw state as Gfx, but is now supported by the Glium 2D back-end.
 To make this work, I added support in Glium for separate blending equations.
 tomaka has been great to work with and given useful feedback.
-I plan to improve the integration with Glutin which has some minor issues.
+I plan to improve the integration with Glium which has some minor issues.
 An idea is to add a convenient window wrapper like Piston-Window, but for Glium.
 
 Servo, the research browser developed by Mozilla, is now using the Image library.
