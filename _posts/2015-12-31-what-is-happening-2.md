@@ -80,14 +80,14 @@ mitchmindtree and I tested and fixed some bugs when displaying Conrod UI on top 
 
 ### [Hematite](https://github.com/PistonDevelopers/hematite)
 
-This project goal is to develop a Minecraft clone for client and server.
+The project goal is to develop a Minecraft clone for client and server.
 
 One the client side:
 
 - limeburst donated the "hematite" name on crates.io :)
 - Some bugs were fixed, and toqueteos landed world auto-finding, an epic PR that was broken for months.
 
-One the server side:
+On the server side:
 
 - Progress on configuration
 - Getting close to [single player support](https://github.com/PistonDevelopers/hematite_server/pull/106)!
@@ -144,7 +144,7 @@ I experimented with a droplet on [pluto.rs](http://pluto.rs/). Seems broken at t
 
 ### Detecting O(N) performance behavior
 
-Working on Turbine and testing the performance of Conrod, I thought of a way to detect O(N) behavior without internal profiling.
+Working on Turbine and testing the performance of Conrod, I thought of a way to detecting O(N) behavior without internal profiling.
 
 For now, it is just a [spreadsheet](https://github.com/PistonDevelopers/turbine/blob/master/external-overhead-per-item.ods).
 
