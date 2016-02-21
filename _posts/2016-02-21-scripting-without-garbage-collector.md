@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What is happening 3"
+title: "Scripting without garbage collector"
 author: bvssvni
 ---
 
