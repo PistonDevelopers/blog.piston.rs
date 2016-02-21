@@ -45,7 +45,7 @@ fn foo(a, b: 'a) {
 
 Now there is another error:
 
-```rust
+```
 `b` does not live long enough
 4,12:     foo(a, b)
 4,12:            ^
@@ -123,7 +123,7 @@ The problem is to remember the order.
 
 To solve this, named argument syntax is supported through snake case function names:
 
-```rust
+```
 update_physicsSettings_dynamicObjects_staticObjects(p, d, s) {
     ...
 }
@@ -155,6 +155,7 @@ One file of Dyon script does not know that another exists!
 Instead, Dyon uses dynamic modules:
 
 loader.dyon:
+
 ```rust
 fn main() {
     graphics := load("graphics.dyon")
@@ -167,6 +168,7 @@ fn main() {
 The imported modules become part of the prelude in the loaded module.
 
 my_program.dyon:
+
 ```rust
 fn main() {
     // No need to import anything.
