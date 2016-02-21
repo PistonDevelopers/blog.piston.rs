@@ -72,8 +72,8 @@ fn main() {
 ```
 
 The Rust borrow checker behaves similarly.  
-If you like a challenge, try fix this code: http://is.gd/IvQdqS  
-Solution: http://is.gd/SX3z1J  
+If you like a challenge, try fix this code: [http://is.gd/IvQdqS](http://is.gd/IvQdqS)  
+Solution: [http://is.gd/SX3z1J](http://is.gd/SX3z1J)  
 
 ### Data oriented design
 
