@@ -7,7 +7,7 @@ author: bvssvni
 [Dyon](https://github.com/pistondevelopers/dyon) is a rusty dynamically typed programming language, previously called "Dynamo".
 
 This article is to explain a bit more in depth about the language.
-In particular, we will see how the lack of a gargbage collector impacts how you think when programming.
+In particular, we will see how the lack of a garbage collector impacts how you think when programming.
 
 ### Lifetimes
 
