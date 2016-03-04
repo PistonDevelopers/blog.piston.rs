@@ -118,7 +118,7 @@ People working on the Piston project or the external ones does not need to know 
 
 ### Ignore version
 
-Disclaimer: This example is meant a real situation whith all the subtleties that follow.
+Disclaimer: This example is taken a real situation with all the subtleties that follow.
 
 nwin is chief maintainer of the popular [Image](https://github.com/PistonDevelopers/image) library.
 It is a pure Rust alternative for encoding and decoding various image formats.
@@ -144,7 +144,7 @@ To fix this, I insert an "ignore-version" field:
 This makes Eco ignore all projects that uses Gif version 0.7.0.
 
 - The maintainer can focus on the stuff that needs to be done without having to publish too often
-- I can control how much workload pressure there is on libraries higher up in the dependency graph.
+- I can control how much workload pressure there is on libraries higher up in the dependency graph
 - People using these libraries might appreciate how we shuffle tasks around to avoid even more frequent updates
 
 ### Override version
@@ -159,10 +159,10 @@ such that upgrades can be made without waiting for the master branch to be updat
 ### Programming in the large
 
 A fundamental challenge with software engineering is that most problems are easy to fix,
-but the integration between lots of code gets exteremely hard when things scale.
+but the integration between lots of code gets extremely hard when things scale.
 
 The goals of Piston project are ambitious enough to scale easily up to at least to 200 libraries.
-Currently, it is at the beginning phase, but because Rust is such a good language for this type of programming,
+Now it is in the beginning phase, but because Rust is such a good language for this type of programming,
 we expect to be able to move on when things stabilize.
 Even with just a few people working at it any time, we can maintain it easily, but also do a lot of research.
 
