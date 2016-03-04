@@ -46,7 +46,7 @@ This happens because dependencies have a lot of subtle issues that gives them a 
 
 We learned from experience that no human could do it right at this scale.
 It was not before we started to use Eco that we got it right,
-and it even told us stuff that would have not been discovered elsewise!
+and it even told us stuff that would have not been discovered otherwise!
 
 ### Eco does the thinking - you do the upgrades
 
