@@ -22,7 +22,7 @@ The object model is similar to Javascript, but has no `null` value.
 Version 0.3.0 added option and result for error handling.
 
 In this article, I will explain the difference between `null` and `option/result`,
-and how Dyon steals and idea from an accepted [RFC](https://github.com/rust-lang/rfcs/pull/243).
+and how Dyon steals an idea from an accepted [RFC](https://github.com/rust-lang/rfcs/pull/243).
 Rust does not support this feature yet, but I think it is brilliant and looking forward to it.
 
 For an introduction to Dyon, see the two previous blog posts:
