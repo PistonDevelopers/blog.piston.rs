@@ -325,7 +325,7 @@ fn main() {
 
 A link inside a link gets flattened, which is useful when generating text documents.
 
-For example, you could have a smart `html` santizing function that understood tags,
+For example, you could have a smart `html` sanitizing function that understood tags,
 and then you could generate a web page any way you liked, as long as you use separate tokens for tags.
 Perhaps a nice idea for a web framework?
 
