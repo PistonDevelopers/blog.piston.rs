@@ -218,12 +218,14 @@ Then to make `∃`/`any` and `∀`/`all` loops work nicely `min`/`max`, I added 
 gives you the indices from any composition of these loops:
 
 ```rust
-x := ∃ i { max j { list[i][j] < 0.5 } }
+x := ∃ i { max j { list[i][j] } < 0.5 }
 if x {
     pos := why(x) // `[i, j]`
     ...
 }
 ```
+
+A secret propagates from the left argument of binary operators.
 
 There is a `why(bool) -> [any]` and `where(f64) -> [any]`.
 
