@@ -13,7 +13,8 @@ GUI discussion I think it is about time for what is turning into the annual
 Conrod update!
 
 
-[![Imgur](http://i.imgur.com/a/VB60v.png)](http://i.imgur.com/a/VB60v.png)
+[![imgur](http://i.imgur.com/6KTixap.png)](http://i.imgur.com/6KTixap.png)
+
 *a WIP of a personal project that uses Conrod for a non-trivial GUI*
 
 
@@ -156,17 +157,22 @@ New widgets include:
   - [**Circle**](http://docs.piston.rs/conrod/conrod/widget/primitive/shape/circle/struct.Circle.html)
   - [**Line**](http://docs.piston.rs/conrod/conrod/widget/primitive/line/struct.Line.html)
   - [**PointPath**](http://docs.piston.rs/conrod/conrod/widget/primitive/point_path/struct.PointPath.html)
+
   All provided conrod widgets are now built from these primitives.
+
   [![image.rs](http://i.imgur.com/a310A9h.png)](http://i.imgur.com/a310A9h.png)
   [![text.rs](http://i.imgur.com/Vp4poXS.png)](http://i.imgur.com/Vp4poXS.png)
   [![primitives.rs](http://i.imgur.com/zPQV4ck.png)](http://i.imgur.com/zPQV4ck.png)
+
 - [**TextEdit**](http://docs.piston.rs/conrod/conrod/widget/text_edit/struct.TextEdit.html):
   A multi-line text editing widget that allows for:
   - Auto-wrapping via either character or whitespace.
   - Left, center and right justification.
   - Control over line-spacing.
   - Block selection.
+
   [![text_edit.rs](http://i.imgur.com/IVO5ORT.png)](http://i.imgur.com/IVO5ORT.png)
+
   The **TextBox** widget is now a thin wrapper around the **TextEdit** widget.
 - [**List**](http://docs.piston.rs/conrod/conrod/widget/list/struct.List.html):
   A widget that abstracts common logic between all list-like widgets including:
@@ -179,19 +185,23 @@ New widgets include:
   Extends the `List` widget providing an abstraction over item selection.
   Includes support for both single and multiple item selection. Used internally
   within the **DropDownList** widget and the new **FileNavigator** widget.
+
   [![list_select.rs](http://i.imgur.com/gJGx6Ds.png)](http://i.imgur.com/gJGx6Ds.png)
+
 - [**FileNavigator**](http://docs.piston.rs/conrod/conrod/widget/file_navigator/struct.FileNavigator.html):
   An OS X Finder inspired file navigator with adjustable columns,
   auto-scrolling, multiple selection and a variety of useful events.
+
   [![file_navigator.rs](http://i.imgur.com/DLreIXl.png)](http://i.imgur.com/DLreIXl.png)
+
 - [**Scrollbar**](http://docs.piston.rs/conrod/conrod/widget/scrollbar/struct.Scrollbar.html):
   Used for manually scrolling some scrollable widget along the *x* or *y* axes.
   Supports auto-hiding.
 - [**PlotPath**](http://docs.piston.rs/conrod/conrod/widget/plot_path/struct.PlotPath.html):
   Allows generating a **PointPath** from some given function *X -> Y*, mapped to
-  its dimensions (This is how the waveform is drawn in the above image).
-  [![plot_path.rs](http://i.imgur.com/uf0edt3.png)](http://i.imgur.com/uf0edt3.png)
+  its dimensions (This is how the waveform is drawn in the top image).
 
+  [![plot_path.rs](http://i.imgur.com/uf0edt3.png)](http://i.imgur.com/uf0edt3.png)
 
 
 Removing `.react` closures - Adding `Widget::Event*
