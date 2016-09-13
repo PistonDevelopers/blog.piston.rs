@@ -94,7 +94,7 @@ renders to a list of depth-sorted `render::Primitives` as output.
 The `event::Raw` type describes a set of basic events (window resize, mouse
 press, key release, etc) that conrod can use to interpret higher level events
 (widget A was double clicked, widget B has captured the keyboard, widget C was
-dragged, etc) which may then be delivered to widgets. When a widget requests for
+dragged, etc) which may then be delivered to widgets. When a widget requests
 events, it is only delivered those that apply to it unless it specifically
 requests for global events.
 
@@ -126,7 +126,7 @@ future (winit, glfw, sdl2, gfx).
 From FreeType to RustType
 -------------------------
 
-For many folks, Conrod was a non-starter due to it's dependency on FreeType - a
+For many folks, Conrod was a non-starter due to its dependency on FreeType - a
 font rendering library implemented in C. It particularly caused [a lot of
 issues](https://github.com/PistonDevelopers/conrod/issues/546) for Windows
 users. *Cue regular thanks to windowsbunny for the help!*
@@ -231,8 +231,8 @@ There are three primary issues that arose from this convention:
   - Awkward Result handling (can't use `try!`).
 - **Ownership issues**: especially when using `FnMut` closures.
 - **Awkward builder method**: We can't write custom `Fn`/`FnMut`/`FnOnce` types
-  to use as default `.react` functions for widgets, meaning the user call the
-  builder method with an empty closure even if they don't care about its
+  to use as default `.react` functions for widgets, meaning the user must call
+  the builder method with an empty closure even if they don't care about its
   interactions.
 
 We were able to solve all of these issues by introducing a `Widget::Event` type,
@@ -339,10 +339,10 @@ Here are some of the issues that are closest on my radar.
   rest of the examples to use this instead of piston_window in order to
   demonstrate greater efficiency.
 - Add a gfx-rs example.
-- Consider the trade-offs of moving these backend cargo features into unique
-  crates within the same repo. This may help to stabilise the core of conrod
-  sooner as progress on the stability of the compatible back-ends cannot be
-  guaranteed.
+- Consider the trade-offs involved in moving these backend cargo features into
+  unique crates within the same repo. This may help to stabilise the core of
+  conrod sooner as progress on the stability of the compatible back-ends cannot
+  be guaranteed.
 - Remove the num crate dependency.
 - *Finish The Guide*.
 - Address all existing bugs.
