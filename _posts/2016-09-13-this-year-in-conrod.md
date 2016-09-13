@@ -7,10 +7,11 @@ author: mitchmindtree
 [Conrod](https://github.com/PistonDevelopers/conrod) has landed some
 long-desired features and overhauls over the past year. I've been excited about
 writing this post for the past few months now, though I have managed to
-continuously put it off until we "just land that one extra special feature!".
+continuously put it off until we *just land that one extra special feature!*
 
-I realise that there's probably always going to be one more exciting feature, so
-I think it is about time for what is turning into the annual Conrod update!
+I realise that there's probably always going to be *one more exciting feature*,
+so I think it is about time for what is turning into **The Annual Conrod
+Update!**
 
 
 [![imgur](http://i.imgur.com/6KTixap.png)](http://i.imgur.com/6KTixap.png)
