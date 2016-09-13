@@ -4,19 +4,22 @@ title: "This Year In Conrod"
 author: mitchmindtree
 ---
 
-[Conrod](https://github.com/PistonDevelopers/conrod) has seen some long-desired
-features and overhauls land over the past year. I've been excited to write this
-post for the past few months now. I have managed to continuously put it off
-until we "just land that one extra special feature!". I realise that there's
-probably always going to be one more exciting feature, and with all the recent
-GUI discussion I think it is about time for what is turning into the annual
-Conrod update!
+[Conrod](https://github.com/PistonDevelopers/conrod) has landed some
+long-desired features and overhauls over the past year. I've been excited about
+writing this post for the past few months now, though I have managed to
+continuously put it off until we "just land that one extra special feature!".
+
+I realise that there's probably always going to be one more exciting feature, so
+I think it is about time for what is turning into the annual Conrod update!
 
 
 [![imgur](http://i.imgur.com/6KTixap.png)](http://i.imgur.com/6KTixap.png)
 
 *a WIP of a personal project that uses Conrod for a non-trivial GUI*
 
+
+Highlights
+----------
 
 Here are some of the highlights before we dive into the details:
 
@@ -51,7 +54,7 @@ the ecosystem. For example, some users wish to use sdl2 for the window context
 and gfx for the graphics, while others want to use glutin for the window context
 and glium for the graphics, etc.
 
-**The Old Problem**
+### **The Old Problem**
 
 Implementing a back-end for conrod used to require numerous traits from various
 crates around the Piston ecosystem. This would frequently cause problems with
@@ -73,7 +76,7 @@ graphics programming, these piston traits at least made it possible for me to
 get started. However, in the following two years I have learned a lot and
 finally managed to find the time and solution to address these issues.
 
-**The New Solution**
+### **The New Solution**
 
 The key to simplifying all of this was realising that there are two primary ways
 in which the UI interacts with an application loop.
@@ -96,8 +99,8 @@ requests for global events.
 
 A
 [**render::Primitive**](http://docs.piston.rs/conrod/conrod/render/struct.Primitive.html)
-describes a set of [6 graphics
-primitives](http://docs.piston.rs/conrod/conrod/render/enum.PrimitiveKind.html),
+describes a set of [**6 graphics
+primitives**](http://docs.piston.rs/conrod/conrod/render/enum.PrimitiveKind.html),
 from which all conrod GUIs can be drawn: `Rectangle`, `Lines`, `Polygon`,
 `Text`, `Image` and `Other`. The first 5 are self-explanatory. `Other` allows
 for custom user primitives which conrod does not yet support natively (i.e.
@@ -204,7 +207,7 @@ New widgets include:
   [![plot_path.rs](http://i.imgur.com/uf0edt3.png)](http://i.imgur.com/uf0edt3.png)
 
 
-Removing `.react` closures - Adding `Widget::Event*
+Removing `.react` closures - Adding `Widget::Event`
 ---------------------------------------------------
 
 Previously, the conventional way for a Widget to support reacting to certain
