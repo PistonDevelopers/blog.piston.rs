@@ -111,8 +111,8 @@ other format that I'm unaware of. Calling `render::Primitives::owned` creates an
 owned instance of the primitive list which can be sent across threads or stored
 for rendering at some other time.
 
-This means that there are now only two steps a user must do to integrate conrod
-into their project:
+This means that there are now only two steps a user must take to integrate
+conrod into their project:
 
 1. Convert their window events into `conrod::event::Raw`s.
 2. Draw the `conrod::render::Primitives` using their graphics back-end of choice.
