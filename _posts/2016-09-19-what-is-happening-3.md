@@ -49,13 +49,15 @@ For more information, see the [previous blog post](http://blog.piston.rs/2016/09
 
 A library for image processing.
 
-Features for contrast, canny edge and other algorithms weere added.
+Features for contrast, canny edge and other algorithms were added.
 
 [List of contributors (8)](https://github.com/PistonDevelopers/imageproc/graphs/contributors)
 
 ### [Piston-Graphics](https://github.com/PistonDevelopers/graphics)
 
 Performance was improved significantly (6x) in the Gfx and Glium backends.
+
+RustType is now replacing FreeType as the library for font rendering.
 
 Colors are now standardized to use sRGB, to get same behavior across platforms.
 
