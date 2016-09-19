@@ -26,7 +26,7 @@ This adds support for progressive JPEGs.
 
 The image library has now Radiance HDR and ICO support.
 
-Docs were improved, performance was improved, and lot of bugs was fixed!
+Docs were improved, performance was improved, and lot of bugs were fixed!
 
 [List of contributors (78)](https://github.com/PistonDevelopers/image/graphs/contributors)
 
