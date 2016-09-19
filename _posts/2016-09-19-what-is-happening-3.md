@@ -15,7 +15,7 @@ A lot of libraries that can be used independently also saw improvements and are 
 The most complex upgrade in the history of Piston is done!
 This was due to Gfx getting an overhaul to support next-gen APIs.
 It took up most of my time this year, and the rest I spent developing a new scripting language (more about this later!).
-That is why there have not been that many blog posts about the Piston project in general.
+This is why there have not been that many blog posts about the Piston project in general.
 
 ### [Image](https://github.com/pistondevelopers/image)
 
@@ -49,7 +49,7 @@ For more information, see the [previous blog post](http://blog.piston.rs/2016/09
 
 A library for image processing.
 
-Features for contract, canny edge and other algorithms weere added.
+Features for contrast, canny edge and other algorithms weere added.
 
 [List of contributors (8)](https://github.com/PistonDevelopers/imageproc/graphs/contributors)
 
