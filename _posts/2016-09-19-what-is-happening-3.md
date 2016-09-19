@@ -65,8 +65,6 @@ You can now override triangulation in the graphic backend for faster or high qua
 
 [List of contributors (25)](https://github.com/PistonDevelopers/graphics/graphs/contributors)
 
-Gini index was added to measure fortune distribution.
-
 ### [Dyon](https://github.com/PistonDevelopers/dyon)
 
 One unexpected surprise this year was the creation of a whole new dynamically typed language,
