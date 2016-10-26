@@ -63,16 +63,16 @@ This also makes it possible to turn it on and off to measure effects on the econ
 
 So, how does it work?
 
-Imagine as a factory that leads the pipes back the floor.
+Imagine a factory that leads the pipes back the floor.
 If people do not work hard enough on the factory floor, they die of the toxic smoke coming out of the pipes.
 This is how a free market with 0% tax would work, because by random chance somebody ends up with too little money
 and is excluded from the economy until somebody gives them something.
 When nobody wants to hire somebody or provide for them, they die.
 
 I think the smoke analogy fits because people die as a direct result of living inside a such system,
-which becomes a systematically biased and impersonal as the system grows in size.
+which becomes systematically biased and impersonal as the system grows in size.
 Because of this effect, no country has ever run successfully without some form of wealth distribution, and need to
-plaster many systems all over to keep things running.
+plaster many systems all over it to keep things running.
 
 *Severe economic inequality is the result of a systematic bias of a system that does not scale*
 
@@ -81,8 +81,7 @@ Swap people with genetically identical ants, everyone equally smart and capable,
 
 OK, back to the imaginary factory:
 
-One day an engineer comes and visits the factory,
-and rebuilds the pipes to let the smoke go up in the air. Wow!
+One day an engineer comes and visits the factory and rebuilds the pipes to let the smoke go up in the air. Wow!
 It leads to a large improvement for the workers.
 They are happier and more productive, which increases the efficiency of the factory.
 
@@ -116,7 +115,7 @@ This is how the factory lets the smoke up in the air, instead of the floor!
 It is the lack of money under the soft limit that charges the inflation.
 Those at the bottom charges the rewards for those above, so it is the BOTTOM who carries the economy.
 
-It is strangely intuitive, because common sense in the real world says that workers DO THE WORK.
+This is strangely intuitive, because common sense in the real world says that workers DO THE WORK.
 Yet, now there is an algorithm that supports this argument! (I think that's cool!)
 
 ### Incentivize people to work
@@ -142,7 +141,7 @@ The problem with the mix-algorithm is that it incredibly hard to reason about it
 How do you set the tax rate when new players join, quit and change transaction patterns?
 
 First I tried studying the long term behavior of Gini, which took 45 minutes of simulation per data point.
-After two weeks, started thinking this would never get me anywhere.
+After two weeks, started thinking this approach would never get me anywhere.
 I estimated that to gather enough data to find a reasonable approximation of the mathematical inverse,
 it would require a super computer with 100_000 cores running for 1000 hours.
 
