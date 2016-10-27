@@ -53,7 +53,7 @@ Last year I came up with an algorithm that seems to work OK using a combination 
 2. Progressive Negative Fortune Tax
 3. Burning Money
 
-Those are 3 ideas that each would crash an economy.
+Those are 3 ideas that each would crash an economy without some form of taxation.
 However, if you combine them in a clever way, they balance each other out and stabilizes the economy.
 
 Since the algorithm uses normalized currency, you can mix it on top of an existing economic system.
