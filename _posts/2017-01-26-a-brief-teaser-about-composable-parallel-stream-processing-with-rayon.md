@@ -83,7 +83,7 @@ This is also composable, but easier to use than those functions taking slices:
 let fx = f(g());
 let input = vec![0, 1, 2];
 let output = vec![0.0; data.len()];
-fx(&data, &mut output);
+fx(&input, &mut output);
 ```
 
 Now, why would anyone do that? Here are some reasons:
