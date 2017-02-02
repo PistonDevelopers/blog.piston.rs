@@ -8,6 +8,9 @@ I just finished reading 3 papers sent to me by Stephen Salter about geoengineeri
 by brightening the albido of clouds to buy us time fixing climate change.
 This is so far the most best approach forward that I have come across.
 
+Update: Stephen Salter gave permission to host the papers so other people could read them,
+[Link to repository](https://github.com/PistonDevelopers/marine_cloud_brightening_papers).
+
 Thumbs up for this direction, and I encourage governments and corporations to immediate start investing
 this research, not only because it could reduce the risks of human extinction significantly,
 but also because there is a potential billion dollar industry here!
