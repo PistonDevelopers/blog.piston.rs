@@ -6,26 +6,27 @@ author: bvssvni
 
 I just finished reading 3 papers sent to me by Stephen Salter about geoengineering
 by brightening the albido of clouds to buy us time fixing climate change.
-This is so far the most best approach forward that I have come across.
+This is so far the best approach forward that I have seen so far.
 
 Update: Stephen Salter gave permission to host the papers so other people could read them,
 [Link to repository](https://github.com/PistonDevelopers/marine_cloud_brightening_papers).
 
 Thumbs up for this direction, and I encourage governments and corporations to immediate start investing
-this research, not only because it could reduce the risks of human extinction significantly,
+in this research, not only because it could reduce the risks of human extinction significantly,
 but also because there is a potential billion dollar industry here!
 
 Geoengineering sounds scary, and it is indeed dangerous when diving into such actions without wisdom.
 However, if you consider this a problem where you are not only studying how to reverse the effect
 of anthropogenic greenhouse gas emissions and runaway methane processes,
 but also study our capabilities to improve our understanding about climate,
-then it seems like a good approach to invest your effort into systems that lets you iterate quicker
+then it seems like a good approach to invest your effort into systems that lets you iterate rapidly
 with feedback from the climate system itself,
 while providing the control to react quickly to an increasingly complex global siutation.
 
 The basic idea is that since there are lower concentration of nuclei that help droplet formation in
 the clean air of open sea waters, it is possible to spray microscopic salt crystals from sea water
 into the air and regulate precipitation very sensitively.
+As a result you can control the brightness of clouds, and counter-act the average warming of the planet.
 Computer models shows that this can both increase and decrease precipitation in various regions around
 the world, so figuring out where to NOT do it is an important first step.
 
@@ -33,8 +34,8 @@ Cloud albido control allows the use of coded modulation to measure with weather 
 how spraying of salt nuklei affects weather patterns, and this can be made sensitive enough to
 collect information in real time without causing severe effects.
 
-It also will provide valuable feedback for climate modelerers, which have currently a hard time
-to predict precipitation, which could have important economic benefit such as earlier warning of flooding.
+It will also provide valuable feedback for climate modelerers, which currently have a hard time
+to predict precipitation, something that could have important economic benefit such as earlier warning of flooding.
 
 As a software engineer I recognize these good characteristics of the solution:
 
@@ -48,7 +49,7 @@ with the technology we have today.
 
 One particular worrysome issue is that we know very little about how increasing ice melting in the arctic areas
 will affect methane clathrates in shallow sea waters.
-Estimates indicate that there is much more carbon stores there than all the emitted greenhouse gases the past century.
+Estimates indicate that there is much more carbon stored there than all the emitted greenhouse gases the past century.
 If we get a runaway methane situation, how do we plan to respond to it?
 
 The obvious course of action is to deploy a research project immediately to control cloud albido,
