@@ -52,7 +52,7 @@ The obvious course of action is to deploy a research project immediately to cont
 so we have a method that we know something about, if the worst case scenario should happen.
 It is a question of collecting the information that engineers can use to design the appropriate system.
 
-We can not do this with existing climate models, because they are not accurate enough.
+We can not do this with existing climate models, because they are not flexible enough.
 The things we see happening now was not expected in many years,
 and the data used for peer-reviewed science used by IPCC that politicians rely on,
 has a cycle of several years which is too slow when we see rapid climate changes,
