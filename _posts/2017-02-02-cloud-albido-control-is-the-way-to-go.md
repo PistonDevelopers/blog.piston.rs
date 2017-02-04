@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Cloud albido control is the way to go"
+title: "Cloud albedo control is the way to go"
 author: bvssvni
 ---
 
 I just finished reading 3 papers sent to me by Stephen Salter about geoengineering
-by brightening the albido of clouds to buy us time fixing climate change.
+by brightening the albedo of clouds to buy us time fixing climate change.
 This is so far the best approach forward that I have seen so far.
 
 Update: Stephen Salter gave permission to host the papers so other people could read them,
@@ -30,7 +30,7 @@ As a result you can control the brightness of clouds, and counter-act the averag
 Computer models shows that this can both increase and decrease precipitation in various regions around
 the world, so figuring out where to NOT do it is an important first step.
 
-Cloud albido control allows the use of coded modulation to measure with weather stations
+Cloud albedo control allows the use of coded modulation to measure with weather stations
 how spraying of salt nuklei affects weather patterns, and this can be made sensitive enough to
 collect information in real time without causing severe effects.
 
@@ -52,7 +52,7 @@ will affect methane clathrates in shallow sea waters.
 Estimates indicate that there is much more carbon stored there than all the emitted greenhouse gases the past century.
 If we get a runaway methane situation, how do we plan to respond to it?
 
-The obvious course of action is to deploy a research project immediately to control cloud albido,
+The obvious course of action is to deploy a research project immediately to control cloud albedo,
 so we have a method that we know something about, if the worst case scenario should happen.
 It is a question of collecting the information that engineers can use to design the appropriate system.
 
