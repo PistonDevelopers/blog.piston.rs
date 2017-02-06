@@ -59,8 +59,8 @@ f_1 = super(n, \(x) = x - x % m + (x + 1) % m)
 
 When `n` and `m` in the example above goes to infinity, you can start at 0,  
 add infinity to take an infinitesimal step in the rotation direction of the torus.  
-Take an Aleph-2 step (a higher infinity), and you jump from the 0-point at the first torus  
-to the 0-point (ignoring Aleph-2) to the second torus.
+Take an Aleph-1 step (a higher infinity), and you jump from the 0-point at the first torus  
+to the 0-point (modulus Aleph-1) to the second torus.
 
 ### Inflating 3D structures
 
