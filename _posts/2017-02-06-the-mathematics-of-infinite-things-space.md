@@ -10,7 +10,7 @@ This blog post is about how the mathematics work.
 
 ### Visualizing Infinite-Things-Space
 
-Vertex data in a 3D structure is often sorted in an array.  
+Vertex data in a 3D structure is often stored in an array.  
 Ignoring the position and other attributes of vertices,
 each vertex can be represented as a natural number which refers to the index in the array of vertices.
 
@@ -25,8 +25,8 @@ By adding by one, `f(x) = x + 1`, the loops are disconnect from themselves and a
 
 To create circles with 4 vertices, use the formula `f(x) = x - x % 4 + (x+1) % 4`.
 
-Mathematical operations on the natural numbers are operations on these loops.  
-For any mathematical expression on natural numbers, there is an equivalent shape in Infinite-Things-Space.  
+Mathematical operations on the natural numbers are equivalent to operations on these loops.  
+For any mathematical expression of a single natural number, there is an equivalent shape in Infinite-Things-Space.  
 
 In group theory, these functions are called "generators".
 
@@ -42,6 +42,11 @@ super(n, f: N -> N) = \(x: N) = f(x / n) * n + x % n
 The Super function is the key to combine multiple generators.
 
 ![step2](http://i.imgur.com/XkecKf7.png)
+
+```
+f_0(x) = x - x % 4 + (x + 1) % 4
+f_1(x) = super(4, \(x) = x + 1)
+```
 
 You can use the Super function with any generator, for example circles to create a donut topology (torus):
 
@@ -79,7 +84,7 @@ which in turn is connected by a super hundredgon (a circle shape with 100 vertic
 
 As you see in the picture above, the shapes do not become perfect.  
 This is because the springs are not possible to satisfy unless the differential topology is complete.  
-Because the inner circle is the same size as the outer one, the shape above twists and stretches the pentagon.
+Because the inner circle is the same size as the outer one, the shape above twists and stretches the pentagons.
 
 Finding a complete differential topology could be done by "tuning" the constraints while simulating,  
 or perhaps relaxing the target distances based on a function of the tension.  
