@@ -67,7 +67,7 @@ You might wonder why this is interesting:
 Since paths are *everything you can predict* about functions,
 it means that a such algorithm would be extremely useful for *everything that can be modelled as functions*.
 
-So far I have algorithm that extracts both symmetric and asymmetric paths,
+So far I have algorithms that extract both symmetric and asymmetric paths,
 but it requires test data and human intuition to narrow down the search space.
 
 Today I am getting a step closer to this dream, by stumbling over this golden nugget:
@@ -78,7 +78,7 @@ Today I am getting a step closer to this dream, by stumbling over this golden nu
 
 It says that you can prove the non-existence of a symmetric path to functions in the monoid category
 from as little as 2 objects.
-In comparison, the current algorithms requires checking an infinite number of functions!
+In comparison, the current algorithms require checking an infinite number of functions!
 
 With some creativity, this can be used to prove things about other functions as well,
 e.g. binary operators by binding one argument to a constant.
@@ -116,4 +116,4 @@ there exists two objects that are not equal by `g(f(x[i])) ¬= g(f(x[j]))`.
 For example, `is_prime(add(2, 2)) ¬= is_prime(add(2, 3))`.
 
 Therefore, there is no symmetric path for `add((> 0))[is_prime]`.
-It is no prime prediction function to learn from addition.
+There is no prime prediction function to learn from addition.
