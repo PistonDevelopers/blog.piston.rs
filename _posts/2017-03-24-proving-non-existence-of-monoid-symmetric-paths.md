@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Proving Non-Existence of Monoid Symmetrci Paths"
+title: "Proving Non-Existence of Monoid Symmetric Paths"
 author: bvssvni
 ---
 
