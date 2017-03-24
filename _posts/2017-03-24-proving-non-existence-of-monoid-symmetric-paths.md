@@ -16,7 +16,7 @@ You can combine them, e.g. `[len] (> 2)` means "a list with length larger than 2
 
 In dependently type theory, you can write `x: list 2`, by storing extra information in the type.
 Path semantics deals with this information outside the type, using arbitray functions.
-This forms a naturally abstract space, called "path semantical space", which describes how functions are identified by each other.
+This forms a natural abstract space, called "path semantical space", which describes how functions are identified by each other.
 
 When a function is connected to another function using functions, it is called a "path".
 
@@ -64,7 +64,7 @@ The holy grail of path semantics is to create an algorithm that finds paths auto
 with as little input from humans as possible.
 
 You might wonder why this is interesting:
-Since paths is *everything you can predict* about functions,
+Since paths are *everything you can predict* about functions,
 it means that a such algorithm would be extremely useful for *everything that can be modelled as functions*.
 
 So far I have algorithm that extracts both symmetric and asymmetric paths,
@@ -100,7 +100,7 @@ Proof:
 To explain the second part, we can write one argument as a set:
 
 ```
-add({[even] true, [even] false}, [even] x) = {[even] (x = true), [even] (x = false)}
+add([even] x, {[even] true, [even] false}) = {[even] (x = true), [even] (x = false)}
 ```
 
 So, at least one element in the set is `[even] true`.
