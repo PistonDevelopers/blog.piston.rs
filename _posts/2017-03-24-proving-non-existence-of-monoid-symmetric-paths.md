@@ -7,6 +7,8 @@ author: bvssvni
 This post is about a recent result from the research on [path semantics](https://github.com/bvssvni/path_semantics).
 I will give a short introduction, since most people do not know what it is.
 
+Update: [Link to work-in-progress paper](https://github.com/bvssvni/path_semantics/blob/master/papers-wip/proving-non-existence-of-symmetric-paths.pdf) that explains the insight of the proof.
+
 Path semantics is an extension of type theory that grounds meaning (semantics) using functions.
 
 For example, a list of length 2 has the type `x: list` but also the sub type `x: [len] 2`.
