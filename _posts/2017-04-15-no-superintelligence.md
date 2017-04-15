@@ -4,7 +4,7 @@ title: "The Piston Project drops its goal of developing a friendly artificial su
 author: bvssvni
 ---
 
-*Disclaimer: In country we have a tradition of writing crime/horror stories in the easter holiday.
+*Disclaimer: In my country we have a tradition of writing crime/horror stories in the easter holiday.
 This is my own attempt to make you frightened. Mwuhahaha!*
 
 After doing some research on this issue, I have come to the conclusion that the only
