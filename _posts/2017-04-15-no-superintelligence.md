@@ -19,11 +19,11 @@ given a problem and resource constraints.
 I wrote up the definition [here](https://github.com/bvssvni/path_semantics/blob/master/papers-wip/first-order-perfect-testable-friendly-ai.pdf),
 if you are interested.
 
-This makes the AI an global utility maximizer within allowed constraints, but the problem is the following:
+This makes the AI a global utility maximizer within allowed constraints, but the problem is the following:
 
 1. As the AI runs for longer time, it will predict that the set of its next actions
 will primarily be limited by what humans think is scary or not.
-2. Because a scary output is lower in utility than a non-result (erasing the output is a valid modification),
+2. Because a scary output is lower in utility than a none-result (erasing the output is a valid modification),
 then it will search for actions that make humans maximize their fear recovery,
 e.g. asked to be turned off for a while until the operators have gotten a good night sleep.
 3. Since this kind of behavior in itself will scare the heck out of people,
