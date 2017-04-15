@@ -46,7 +46,7 @@ Thus, if there is no easy way to prove the system is friendly, it would not be v
 The AI could also restricts itself to actions only that are comfortable,
 but unfortunately this is the same as spending lot of capacity to prove that we will not get scared.
 Thus, if the system works perfectly, it will be on the edge between uncomfortable and scary,
-and mostly limited by how much we prefer any new results vs how comfortable we would be when we receiving them.
+and mostly limited by how much we prefer any new results vs how comfortable we would be when receiving them.
 Reading reports about a system that predicts how scared you would be if it took another course of action,
 would likely increase your fear over time.
 
