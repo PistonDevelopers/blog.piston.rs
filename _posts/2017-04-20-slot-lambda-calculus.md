@@ -32,11 +32,11 @@ All these activities are related to the meaning of language, and this makes the 
 
 Slot lambda calculus is a tool that takes those "infinite possibilities" and makes them very, very simple.
 
-First, instead of an infinite number of ways of constructing expressions in a language,
+Instead of an infinite number of ways of constructing expressions in a language,
 in slot lambda calculus there is only one way. For example, if you want to express `1 + 1 = 2`:
 
 ```
-  (_ = _)(_ + _)(1)(1)(2)
+    (_ = _)(_ + _)(1)(1)(2)
 ```
 
 This gets turned into:
