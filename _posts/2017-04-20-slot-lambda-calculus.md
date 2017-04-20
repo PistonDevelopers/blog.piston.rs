@@ -150,12 +150,12 @@ OK, now let us have some fun: We want to create a tiny language for describing w
     (_ ignores _)(<name>)(<name>)
     (_ see _)(<name>)(_)
         (_ see _)(<name>)(<name>)
-		    (_ see _ loves _)(<name>)(<name>)(<name>)
-		    (_ see _ hates _)(<name>)(<name>)(<name>)
-		    (_ see _ ignores _)(<name>)(<name>)(<name>)
-		    (_ see _ see _ loves _)(<name>)(<name>)(<name>)(<name>)
-		    (_ see _ see _ hates _)(<name>)(<name>)(<name>)(<name>)
-		    (_ see _ see _ ignores _)(<name>)(<name>)(<name>)(<name>)
+	(_ see _ loves _)(<name>)(<name>)(<name>)
+	(_ see _ hates _)(<name>)(<name>)(<name>)
+	(_ see _ ignores _)(<name>)(<name>)(<name>)
+	(_ see _ see _ loves _)(<name>)(<name>)(<name>)(<name>)
+	(_ see _ see _ hates _)(<name>)(<name>)(<name>)(<name>)
+	(_ see _ see _ ignores _)(<name>)(<name>)(<name>)(<name>)
 ```
 
 This language can describe relationships, e.g. `Bob loves Alice`,
