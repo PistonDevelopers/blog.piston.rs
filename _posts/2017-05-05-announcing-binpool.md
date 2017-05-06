@@ -51,7 +51,7 @@ The first flag is a type format, which supports 10 common Rust numerical primiti
 with vector and matrix dimensions up to 80x80.
 
 The second flag is a unique property id that identifies the property of the particle system.
-This is also used to define time, e.g. an f32 scalar.
+This is also used to define time, e.g. a f32 scalar.
 
 Next the format stores the number of bytes in the data block and an offset instance id,
 such that you can read and write parts of the particle system (e.g. only the part that is dynamic or needed for analysis).
