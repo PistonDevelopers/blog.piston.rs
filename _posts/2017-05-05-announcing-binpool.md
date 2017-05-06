@@ -11,7 +11,7 @@ This blog post is about a new experimental uniform binary format for particle ph
 Currently I am diving deep into [marine cloud brightening](http://blog.piston.rs/2017/02/02/cloud-albido-control-is-the-way-to-go/)
 to understand how humanity can avoid some severe effects of climate change by using
 some form of clean and reversible geoengineering.
-If you did not know already, there are have been some very worrisome observations in 2016-2017,
+If you did not know already, there have been some very worrisome observations in 2016-2017,
 so I thought it was a good idea to educate myself a bit and perhaps get some input on what technological challenges there are.
 The scientists and engineers working on this have been quite open and even sent me papers to read! Thanks guys.
 
