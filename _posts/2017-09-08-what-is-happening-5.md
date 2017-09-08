@@ -99,7 +99,7 @@ Here is a thought experiment designed to help you understand what it is about:
 
 1. Take a lot of monkeys
 2. Make them type randomly on a keyboard
-3. What is the chance one of them recreate Shakespeare (or Harry Potter)?
+3. What is the chance one of them recreates Shakespeare (or Harry Potter)?
 
 Using standard probability theory, it is easy to compute this chance,
 even we never will get the opportunity to test it out in practice,
@@ -124,9 +124,9 @@ In additon you need:
 3. A function describing what is a winning condition from the output
 
 A huge breakthrough in path semantics happened by extending the theory to probabilities of finite sets.
-Now I got a higer order path semantical function that solves similar problems to the one above.
+Now I got a higher order path semantical function that solves similar problems to the one above.
 It is called "probabilistic path" in the language of path semantics.
 
 I tested it on very simple things, because it is very hard to use on complex algorithms.
-One open problem is how describe in a meaningful way why the algorithm is allowed sum positive and negative numbers
+One open problem is how describe in a meaningful way why the algorithm is allowed to sum positive and negative numbers
 while always ending up in the valid probability range between 0 and 1.
