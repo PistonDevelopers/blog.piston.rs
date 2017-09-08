@@ -91,10 +91,6 @@ this might work, but have not formalized it yet (I lack the right conceptual too
 Surprisingly it is kind of like binary search, but instead of sorting the algorithm need to arrange sub-types.
 You can [order a T-shirt](https://github.com/advancedresearch/path_semantics/blob/master/README.md) with the symbols of the first steps `∃f{}` (it is called a "universal existential path").
 
-I want to show you, because I think it is cool:
-
- <img src="https://rlv.zcache.com/perfectly_intelligent_given_perfect_knowledge_t_shirt-r372977b0e3b944e5965727f02d403d40_k2gmx_325.jpg?bg=0xffffff" alt=" />
-
 #### Probabilistic paths: A new discovery
 
 ![formula for probabilistic paths](http://i.imgur.com/deoP869.png)
