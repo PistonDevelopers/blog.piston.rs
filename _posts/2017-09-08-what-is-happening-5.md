@@ -118,8 +118,10 @@ What we need a different way of thinking about probabilities that can be interpr
 A probabilistic path is a transform of the source code of e.g. Super Mario,
 such that you can compute how likely a monkey is to win the game.
 
-1. You need some function describing how much a given input is likely
-3. You need some function describing what is a winning condition from the output
+In additon you need:
+
+1. A function describing how likely a given input is
+3. A function describing what is a winning condition from the output
 
 A huge breakthrough in path semantics happened by extending the theory to probabilities of finite sets.
 Now I got a higer order path semantical function that solves similar problems to the one above.
