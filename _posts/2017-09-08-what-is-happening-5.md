@@ -93,7 +93,7 @@ You can [order a T-shirt](https://github.com/advancedresearch/path_semantics/blo
 
 I want to show you, because I think it is cool:
 
- <div style="text-align:center;line-height:150%"> <a href="https://www.zazzle.com/perfectly_intelligent_given_perfect_knowledge_t_shirt-235515100047304821?rf=238435142389717543" rel="nofollow" > <img src="https://rlv.zcache.com/perfectly_intelligent_given_perfect_knowledge_t_shirt-r372977b0e3b944e5965727f02d403d40_k2gmx_325.jpg?bg=0xffffff" alt="Perfectly Intelligent Given Perfect Knowledge T-Shirt" style="border:0;" /> </a> <br /> <a href="https://www.zazzle.com/perfectly_intelligent_given_perfect_knowledge_t_shirt-235515100047304821?rf=238435142389717543" rel="nofollow" ></div>
+ <img src="https://rlv.zcache.com/perfectly_intelligent_given_perfect_knowledge_t_shirt-r372977b0e3b944e5965727f02d403d40_k2gmx_325.jpg?bg=0xffffff" alt=" />
 
 #### Probabilistic paths: A new discovery
 
