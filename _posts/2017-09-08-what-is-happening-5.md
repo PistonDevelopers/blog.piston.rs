@@ -33,6 +33,8 @@ Image is a very popular image library with pure-Rust encoders and decoders.
 - Improved BMP support
 - Lots of bug fixed
 
+[List of contributors (95)](https://github.com/PistonDevelopers/image/graphs/contributors)
+
 ### [Imageproc](https://github.com/PistonDevelopers/imageproc)
 
 Imageproc is a library for image processing.
@@ -41,6 +43,8 @@ Imageproc is a library for image processing.
 - Sobel gradient for color images
 - Improved performance
 - More tests and documentation
+
+[List of contributors (16)](https://github.com/PistonDevelopers/imageproc/graphs/contributors)
 
 ### [VisualRust](https://github.com/PistonDevelopers/visualrust)
 
