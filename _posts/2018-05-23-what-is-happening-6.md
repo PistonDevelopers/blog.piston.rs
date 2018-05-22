@@ -25,7 +25,7 @@ I forgot to mention in last blog post that there is a [new example using the rs-
 Conrod is an UI framework that makes it easy to program UIs in Rust.
 
 - [New graph widget](https://github.com/PistonDevelopers/conrod/pull/1104)
-- [Directly-only file navigator](https://github.com/PistonDevelopers/conrod/pull/1072)
+- [Directory-only file navigator](https://github.com/PistonDevelopers/conrod/pull/1072)
 - Improved tutorial
 - Various fixes
 
