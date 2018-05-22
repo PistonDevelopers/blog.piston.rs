@@ -109,6 +109,6 @@ the rest you have to start exploring [here](https://github.com/advancedresearch/
 
 - A "Polite Zen Robot" (PZR) might be made safely extensible by using neutral judgements ([Link to paper](https://github.com/advancedresearch/path_semantics/blob/master/papers-wip/the-polite-zen-robot.pdf))
 - Granular judgments indicates rational agents might cooperate if their future identity is uncertain ([Link to paper](https://github.com/advancedresearch/path_semantics/blob/master/papers-wip/ethical-reasoning-about-altruistic-competitions.pdf))
-- [@forefinger](https://twitter.com/PistonDeveloper) suggested a mechanism for bounded utility functions in the human brain linked to the role of serotonin ([Link to repository](https://github.com/advancedresearch/ethicophysics/tree/master/askesis))
-- [@forefinger](https://twitter.com/PistonDeveloper) has made a mathematical model of the cerebellum (!) ([Link to paper](https://github.com/advancedresearch/ethicophysics/blob/master/antipsychotic/serotonin.pdf))
+- [@forefinger](https://twitter.com/PistonDeveloper) suggested a mechanism for bounded utility functions in the human brain linked to the role of serotonin ([Link to paper](https://github.com/advancedresearch/ethicophysics/blob/master/antipsychotic/serotonin.pdf))
+- [@forefinger](https://twitter.com/PistonDeveloper) has made a mathematical model of the cerebellum (!) ([Link to repository](https://github.com/advancedresearch/ethicophysics/tree/master/askesis))
 - We will start combining Piston and AdvancedResearch to create simulated environments for agents (and use other Rust projects as well!) ([Link to repository](https://github.com/advancedresearch/challenges))
