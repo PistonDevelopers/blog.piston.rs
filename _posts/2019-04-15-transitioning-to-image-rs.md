@@ -6,7 +6,7 @@ author: bvssvni
 
 Follow [@PistonDeveloper at Twitter](https://twitter.com/PistonDeveloper)!
 
-This blog is about the transition of image libraries from the Piston project to a new organization: [Image-rs](https://github.com/image-rs)
+This blog is about the transition of image libraries from The Piston Project to a new organization: [Image-rs](https://github.com/image-rs)
 
 ### Why Image Libraries are Moving
 
@@ -26,7 +26,7 @@ In addition to these important reasons, there is an opportunity for new people t
 
 ### Publishing Permissions
 
-The permissions to publish on crates.io for these crates will move from the Publish team in the Piston project
+The permissions to publish on crates.io for these crates will move from the Publish team in The Piston Project
 to the Publish team under Image-rs.
 
 I (bvssvni) plan to participate in the new organization as a contributor.
@@ -36,7 +36,7 @@ For security reasons, my own owner permissions will be removed and replaced by t
 
 ### Owner and Leadership Transition
 
-Previously, the image libraries were part of the Piston project and therefore under supervision of myself (bvssvni).
+Previously, the image libraries were part of The Piston Project and therefore under supervision of myself (bvssvni).
 
 Under the new organization, there are 3 active contributors to image libraries that will serve this role under the transition,
 in case anything unexpected happens (alphabetic order):
@@ -50,7 +50,7 @@ which is important for setting a future direction of these projects.
 
 ### Personal Comments on the Transition
 
-Due to two recent occurences of suspicious activity, my focus has been on the security of the Piston project.
+Due to two recent occurences of suspicious activity, my focus has been on the security of The Piston Project.
 This has delayed other work and made me aware of how much time it takes to just run The Piston Project and AdvancedResearch.
 
 - People working on image libraries deserve the best working environment it is possible to make
@@ -59,5 +59,5 @@ This has delayed other work and made me aware of how much time it takes to just 
 
 It makes completely sense to me to move these libraries to a new organization.
 
-The way it looks now for Image-rs, I am proud to be part of the new organization.
+The way it looks now for Image-rs, I am proud to be part of the new organization.  
 I hope that other people will feel the same and welcome the change.
