@@ -6,6 +6,13 @@ author: bvssvni
 
 Follow [@PistonDeveloper at Twitter](https://twitter.com/PistonDeveloper)!
 
+Update: There is a Rust gamedev meetup in Oslo coming up:
+
+https://www.meetup.com/Rust-Oslo/events/261774885/
+
+Sadly, I'm on vacation at that time, but you can meet people from the [Amethyst](https://amethyst.rs/) project.
+Happy coding!
+
 ### About the Piston core
 
 The Piston core is a set of libraries that defines a core abstraction for user inputs, window and event loop.  
