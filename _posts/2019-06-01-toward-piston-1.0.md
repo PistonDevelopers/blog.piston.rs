@@ -58,7 +58,7 @@ Status: 1.0 (stable)
 
 ### [Piston-Viewport](https://crates.io/crates/piston-viewport)
 
-A viewport is a rectangle inside the window sets up the coordinate system for a graphics API.
+A viewport is a rectangle inside the window that sets up the coordinate system for a graphics API.
 
 This library has a simple struct `Viewport` that stores viewport information.
 It is used to pass viewport information from render events to 2D graphics backends.
